@@ -1,0 +1,10 @@
+color: #ebeef0
+created: 20230824105755838
+modified: 20230824112935609
+title: time-prints
+type: text/vnd.tiddlywiki
+
+这是一个记录时间管理的插件。中文名是[[须臾]]。
+
+英文名为什么会是标题这个呢？因为一直找不到合适的词语，结果听到一首歌，歌名是fingerprints，指纹的意思，便想到timeprints，时间的纹路，结果一搜索，发现很多python相关的讨论中，都会讨论如何打印当前时间。觉得这个东西还和编程相关，遂用之。
+

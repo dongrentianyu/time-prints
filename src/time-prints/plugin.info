@@ -1,0 +1,9 @@
+{
+  "title": "$:/plugins/mabuqian/time-prints",
+  "name": "time-prints",
+  "author": "mabuqian",
+  "description": "print time",
+  "plugin-type": "plugin",
+  "version": "0.0.1",
+  "list": "readme"
+}
