@@ -3,7 +3,9 @@
   "name": "time-prints",
   "author": "mabuqian",
   "description": "print time",
+  "type": "application/json",
+  "core-version": ">=5.2.0",
   "plugin-type": "plugin",
   "version": "0.0.1",
-  "list": "readme"
+  "list": "readme content"
 }
