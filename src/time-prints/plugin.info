@@ -1,6 +1,6 @@
 {
   "title": "$:/plugins/mabuqian/time-prints",
-  "name": "time-prints",
+  "name": "Time Prints",
   "author": "mabuqian",
   "description": "print time",
   "type": "application/json",
