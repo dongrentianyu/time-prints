@@ -9,6 +9,7 @@ title: $:/plugins/mabuqian/time-prints/main/components/buttons
       time_major="生活"
       time_record="正常记录"
       time_day=<<now "YYYY-0MM-0DD" >>
+      tags=<<now "YYYY-0MM-0DD" >>
       time_start=<<now "0hh:0mm" >>
       time_end=<<now "0hh:0mm" >>
      >
@@ -23,6 +24,7 @@ title: $:/plugins/mabuqian/time-prints/main/components/buttons
 <$let currentTiddler=<<createTiddler-title>> >
   <$action-sendmessage $message="tm-save-tiddler" $param=<<currentTiddler>> />
   <$action-sendmessage $message="tm-auto-save-wiki" />
+  <$action-sendmessage $message="tm-edit-tiddler" $param=<<createTiddler-title>>/>
  </$let>
  <$action-setfield
   $tiddler="$:/state/TP/PageLayout/create-tiddler-title"

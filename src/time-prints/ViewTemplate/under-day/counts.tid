@@ -1,0 +1,34 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/counts
+caption: 统计
+tags: $:/tags/TP/under-day
+
+<$let
+	time_day_all={{{ [tag<currentTiddler>has[time_spent]get[time_spent]sum[]]  }}}
+    time_day_life={{{ [tag<currentTiddler>has[time_spent]time_major[生活]get[time_spent]sum[]]  }}}
+    time_day_study={{{ [tag<currentTiddler>has[time_spent]time_major[学习]get[time_spent]sum[]]  }}}
+    time_day_working={{{ [tag<currentTiddler>has[time_spent]time_major[工作]get[time_spent]sum[]]  }}}
+    time_day_amusement={{{ [tag<currentTiddler>has[time_spent]time_major[娱乐]get[time_spent]sum[]]  }}}
+    time_day_activites={{{ [tag<currentTiddler>has[time_spent]time_major[活动]get[time_spent]sum[]]  }}}>
+
+|生活|学习|工作|娱乐|活动|总共|
+|<<time_day_life>>|<<time_day_study>>|<<time_day_working>>|<<time_day_amusement>>|<<time_day_activites>>|<<time_day_all>>|
+
+<$macrocall $name=donut-chart pct={{{ [<time_day_life>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="生活占比" color=green/>
+<$macrocall $name=donut-chart pct={{{ [<time_day_study>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="学习占比" color=blue/>
+<$macrocall $name=donut-chart pct={{{ [<time_day_working>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="工作占比" color=orange/>
+<$macrocall $name=donut-chart pct={{{ [<time_day_amusement>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="娱乐占比" color=red/>
+<$macrocall $name=donut-chart pct={{{ [<time_day_activites>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="活动占比" color=pink/>
+
+<$button tooltip="一天结束后，进行赋值">
+<$action-setfield
+time_day_all=<<time_day_all>>
+time_day_life=<<time_day_life>>
+time_day_study=<<time_day_study>>
+time_day_working=<<time_day_working>>
+time_day_amusement=<<time_day_amusement>>
+time_day_activites=<<time_day_activites>>
+/>
+{{$:/plugins/mabuqian/time-prints/image/day}} 赋值
+</$button>
+
+</$let>

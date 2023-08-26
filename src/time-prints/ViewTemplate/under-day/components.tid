@@ -1,0 +1,18 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/components
+tags: $:/tags/ViewTemplate
+list-before: $:/plugins/mabuqian/time-prints/ViewTemplate/super-tag
+
+\import [[$:/plugins/mabuqian/time-prints/main/components/buttons]]
+
+<$list filter="[<currentTiddler>time_form[days]!prefix[$:/]]">
+<div class="tp-sidebar-project-list-item" >
+<<create-events>>&nbsp;&nbsp;
+</div>
+
+<details>
+  <summary>查看更多内容</summary>
+
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-day]]" "$:/plugins/mabuqian/time-prints/ViewTemplate/under-day/day-dynamic-table" "$:/state/tp/under-day" "tc-vertical">>
+
+</details>
+</$list>
