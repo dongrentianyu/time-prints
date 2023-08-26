@@ -1,0 +1,14 @@
+[
+    {
+        "created": "20230729154820355",
+        "creator": "马不前",
+        "text": "",
+        "tags": "$:/SuperTag/TraitTag",
+        "title": "$:/TraitTag/Time",
+        "modified": "20230816094901685",
+        "type": "text/vnd.tiddlywiki",
+        "wl-field-name-text": "schema",
+        "schema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"time_major\": {\n      \"type\": \"string\",\n      \"title\": \"大分类\",\n      \"description\": \"时间花费的大分类，方便后续统计\",\n      \"enum\": [\n        \"学习\",\n        \"生活\",\n        \"娱乐\",\n        \"活动\",\n        \"工作\"\n      ],\n      \"default\": \"生活\"\n    },\n    \"time_spent\": {\n      \"type\": \"string\",\n      \"description\": \"时间花费不能为空\",\n      \"title\": \"时间花费\"\n    },\n    \"time_record\": {\n      \"type\": \"string\",\n      \"title\": \"记录情况\",\n      \"description\": \"时间记录情况\",\n      \"enum\": [\n        \"意外状态\",\n        \"事后补记\",\n        \"琐碎时间\",\n        \"跨天记录\",\n        \"混沌时间\",\n        \"正常记录\"\n      ],\n      \"default\": \"正常记录\"\n    },\n    \"time_form\": {\n      \"type\": \"string\",\n      \"title\": \"周期分类\",\n      \"description\": \"年月日不同的时间\",\n      \"enum\": [\n        \"years\",\n        \"mounths\",\n        \"weeks\",\n        \"days\",\n        \"events\"\n      ]\n    },\n    \"time_start\": {\n      \"type\": \"string\",\n      \"title\": \"开始时间\",\n      \"description\": \"事件的开始时间\",\n      \"format\": \"time\"\n    },\n    \"time_end\": {\n      \"type\": \"string\",\n      \"title\": \"结束时间\",\n      \"description\": \"事件的结束时间\",\n      \"format\": \"time\"\n    },\n    \"time_day\": {\n      \"type\": \"string\",\n      \"title\": \"日期\",\n      \"description\": \"日期时间\",\n      \"format\": \"date\"\n    }\n  },\n  \"required\": [\n    \"time_major\",\n    \"time_record\",\n    \"time_form\",\n    \"time_start\",\n    \"time_end\",\n    \"time_day\"\n  ]\n}",
+        "modifier": "马不前"
+    }
+]

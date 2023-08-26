@@ -1,0 +1,23 @@
+created: 20230826081052696
+modified: 20230826113959383
+super-tag: time
+time_day: 2023-08-26
+time_end: 17:01
+time_form: events
+time_major: 生活
+time_record: 正常记录
+time_spent: 
+time_start: 16:10
+title: 00
+type: text/vnd.tiddlywiki
+
+<$let
+	timestamp-modified={{{ [{!!time_end}search-replace[:],[]]  }}}
+	timestamp-created={{{ [{!!time_end}split[:]] }}}
+	timestamp-modified2={{{ [<timestamp-modified>search-replace<timestamp-created>,[0]]  }}}
+	difference-days={{{ [<timestamp-modified>subtract<timestamp-created>] }}}>
+
+* ''修改日期:'' <$text text=<<timestamp-modified2>> />
+* ''创建日期:'' <$text text=<<timestamp-created>> />
+* ''期间天数:'' <<difference-days>> 天
+</$let>

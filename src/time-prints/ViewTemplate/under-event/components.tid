@@ -1,0 +1,10 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-event/components
+tags: $:/tags/ViewTemplate
+
+\import  [[$:/plugins/mabuqian/time-prints/view-template/components/buttons]] [[$:/plugins/mabuqian/time-prints/main/components/buttons]]
+
+<$list filter="[<currentTiddler>has[super-tag]!prefix[$:/]]">
+
+<<set-time-end>>
+
+</$list>

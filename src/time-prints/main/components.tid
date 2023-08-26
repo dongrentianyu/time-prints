@@ -1,0 +1,9 @@
+title: $:/plugins/mabuqian/time-prints/main/components
+
+\import [[$:/plugins/mabuqian/time-prints/main/EditTemplate/title]] [[$:/plugins/mabuqian/time-prints/main/components/buttons]]
+
+<div class="tp-sidebar-create-task">
+ <<simple-title-edit "$:/state/TP/PageLayout/create-tiddler-title" >>
+</div>
+
+<<create-events>>

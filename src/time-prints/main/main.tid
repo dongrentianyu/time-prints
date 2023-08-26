@@ -1,8 +1,8 @@
 title: $:/plugins/mabuqian/time-prints/main
 caption: TP
 description: time-prints 时间记录
-list-after: $:/core/ui/SideBar/More
+list-after: $:/core/ui/SideBar/Recent
 tags: $:/tags/SideBar
 type: text/vnd.tiddlywiki
 
-{{$:/plugins/mabuqian/time-prints/main/button}}
+{{$:/plugins/mabuqian/time-prints/main/components}}

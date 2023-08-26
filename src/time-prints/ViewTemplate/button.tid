@@ -1,0 +1,10 @@
+title: $:/plugins/mabuqian/time-prints/view-template/components/buttons
+
+\import [[$:/plugins/mabuqian/time-prints/main/components/buttons]]
+
+\define set-time-end()
+<$button tooltip="结束时刻">
+<$action-setfield time_end=<<now "hh:mm" >>/>
+{{$:/plugins/mabuqian/time-prints/image/event}} 结束时刻
+</$button>
+\end

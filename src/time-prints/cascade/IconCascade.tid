@@ -1,0 +1,5 @@
+title: $:/plugins/mabuqian/time-prints/Cascade/IconCascade
+tags: $:/tags/TiddlerIconFilter
+list-before: $:/config/TiddlerIconFilters/default
+
+[time_form[events]then[$:/plugins/mabuqian/time-prints/image/event]]

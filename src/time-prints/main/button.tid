@@ -1,7 +1,30 @@
-title: $:/plugins/mabuqian/time-prints/main/button
+title: $:/plugins/mabuqian/time-prints/main/components/buttons
 
-\import [[$:/plugins/mabuqian/time-prints/main/EditTemplate/title]]
+\define create-events()
+<$button tooltip="点击创建事件">
+    <$action-createtiddler
+      $basetitle={{$:/state/TP/PageLayout/create-tiddler-title}}
+      super-tag="time"
+      time_form="events"
+      time_major="生活"
+      time_record="正常记录"
+      time_day=<<now "YYYY-0MM-0DD" >>
+      time_start=<<now "0hh:0mm" >>
+     >
+     <<after-create-tiddler-without-parent>>
+     </$action-createtiddler>
+     {{$:/plugins/mabuqian/time-prints/image/event}} 事件
+</$button>
+\end
 
-<div class="tp-sidebar-create-task">
- <<simple-title-edit "$:/state/TP/PageLayout/create-tiddler-title" >>
-</div>
+\define after-create-tiddler-without-parent()
+<$action-navigate $to=<<createTiddler-title>>/>
+<$let currentTiddler=<<createTiddler-title>> >
+  <$action-sendmessage $message="tm-save-tiddler" $param=<<currentTiddler>> />
+  <$action-sendmessage $message="tm-auto-save-wiki" />
+ </$let>
+ <$action-setfield
+  $tiddler="$:/state/TP/PageLayout/create-tiddler-title"
+  text=""
+ />
+\end
