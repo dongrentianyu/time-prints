@@ -6,6 +6,6 @@
   "type": "application/json",
   "core-version": ">=5.2.0",
   "plugin-type": "plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "list": "readme"
 }
