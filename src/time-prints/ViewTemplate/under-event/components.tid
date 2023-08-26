@@ -4,7 +4,7 @@ list-before: $:/plugins/mabuqian/time-prints/ViewTemplate/super-tag
 
 \import  [[$:/plugins/mabuqian/time-prints/view-template/components/buttons]] [[$:/plugins/mabuqian/time-prints/main/components/buttons]]
 
-<$list filter="[<currentTiddler>has[super-tag]!prefix[$:/]]">
+<$list filter="[<currentTiddler>time_form[events]!prefix[$:/]]">
 <div class="tp-sidebar-project-list-item" >
 <<set-time-end>>&nbsp;&nbsp;
 <<set-time-start-end>>

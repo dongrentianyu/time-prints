@@ -29,3 +29,16 @@ title: $:/plugins/mabuqian/time-prints/main/components/buttons
   text=""
  />
 \end
+
+\define create-days()
+<$button tooltip="点击创建一天">
+    <$action-createtiddler
+      $basetitle=<<now "YYYY-0MM-0DD" >>
+      super-tag="days"
+      time_form="days"
+     >
+     <<after-create-tiddler-without-parent>>
+     </$action-createtiddler>
+     {{$:/plugins/mabuqian/time-prints/image/day}} 一天
+</$button>
+\end
