@@ -9,4 +9,9 @@ list-before: $:/plugins/mabuqian/time-prints/ViewTemplate/super-tag
 <<set-time-end>>&nbsp;&nbsp;
 <<set-time-start-end>>
 </div>
+
+<details>
+  <summary>添加当前内容</summary>
+<<select-edit-specific>>
+</details>
 </$list>

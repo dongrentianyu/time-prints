@@ -24,3 +24,36 @@ title: $:/plugins/mabuqian/time-prints/view-template/components/buttons
 </$button>
 </$let>
 \end
+
+\define select-edit-specific()
+<style>
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+.div1 { grid-area: 1 / 1 / 6 / 2; }
+.div2 { grid-area: 1 / 2 / 5 / 3; }
+.div3 { grid-area: 5 / 2 / 6 / 3; }
+</style>
+<div class="parent">
+<div class="div1">
+<$select tiddler='$:/state/tf/select-edit-specific' field='testing' multiple size='8' class="w-100">
+<$list filter='[time_major{!!time_major}get[time_specific]unique[]]'>
+<option><$view field='title'/></option>
+</$list>
+</$select>
+</div>
+<div class="div2">
+<$edit-text  field="time_specific" class="w-100 h-100" tag=textarea/>
+</div>
+<div class="div3">
+<$button tooltip="确定添加当前内容">
+<$action-setfield  time_specific={{{ [[$:/state/tf/select-edit-specific]get[testing]] }}}   />
+确认添加
+</$button>
+</div>
+</div>
+\end
