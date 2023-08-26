@@ -6,4 +6,6 @@ title: $:/plugins/mabuqian/time-prints/main/components
  <<simple-title-edit "$:/state/TP/PageLayout/create-tiddler-title" >>
 </div>
 
-<<create-events>>
+<div class="tp-sidebar-project-list-item" >
+<<create-events>>&nbsp;&nbsp;
+</div>

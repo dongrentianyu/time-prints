@@ -37,3 +37,14 @@
   border: none;
   background: transparent;
 }
+.tp-sidebar-project-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tp-sidebar-project-list-item {
+  padding: 5px 0;
+  margin: 5px;
+  word-wrap: break-word;
+	word-break: break-all;
+}

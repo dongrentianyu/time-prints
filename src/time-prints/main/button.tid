@@ -10,6 +10,7 @@ title: $:/plugins/mabuqian/time-prints/main/components/buttons
       time_record="正常记录"
       time_day=<<now "YYYY-0MM-0DD" >>
       time_start=<<now "0hh:0mm" >>
+      time_end=<<now "0hh:0mm" >>
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
