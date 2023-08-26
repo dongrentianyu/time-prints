@@ -1,4 +1,7 @@
 title: $:/plugins/mabuqian/time-prints/readme
 type: text/vnd.tiddlywiki
 
-随便写点内容好了，看看情况
+这是一个个人化自定义的时间管理插件，文档还没写好，安装前请备份tiddlywiki。
+
+* code: https://github.com/dongrentianyu/time-prints
+* demo: https://dongrentianyu.github.io/time-prints/
