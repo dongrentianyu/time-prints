@@ -2,7 +2,7 @@ title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-event/components
 tags: $:/tags/ViewTemplate
 list-before: $:/plugins/mabuqian/time-prints/ViewTemplate/super-tag
 
-\import  [[$:/plugins/mabuqian/time-prints/view-template/components/buttons]] [[$:/plugins/mabuqian/time-prints/main/components/buttons]]
+\import  [[$:/plugins/mabuqian/time-prints/view-template/under-event/components/buttons]] [[$:/plugins/mabuqian/time-prints/main/components/buttons]] [[$:/plugins/mabuqian/time-prints/view-template/under-event/components/select-edit-specific]]
 
 <$list filter="[<currentTiddler>time_form[events]!prefix[$:/]]">
 <div class="tp-sidebar-project-list-item" >

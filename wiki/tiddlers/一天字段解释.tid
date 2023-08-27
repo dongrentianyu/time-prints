@@ -1,0 +1,15 @@
+created: 20230827135400424
+modified: 20230827135918983
+tags: 
+title: 一天字段解释
+type: text/vnd.tiddlywiki
+
+* super-tag超级标签，值为days，用来展示字段
+* time_form时间类型，值为days
+* tags两个标签，一个是年份加月份，一个是年份加当年的周期
+* day_years年份
+* day_months月份
+* day_days天数
+* day_weeks星期数，星期一到星期七分别为1到7
+* year_weeks一年中当前周期
+* year_days一年中当日天数，第几天

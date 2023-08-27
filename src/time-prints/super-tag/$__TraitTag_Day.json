@@ -1,0 +1,12 @@
+[
+    {
+        "created": "20230827135240331",
+        "text": "",
+        "title": "$:/TraitTag/Day",
+        "modified": "20230827140300271",
+        "tags": "$:/SuperTag/TraitTag",
+        "type": "text/vnd.tiddlywiki",
+        "wl-field-name-text": "schema",
+        "schema": "{\n  \"type\": \"object\",\n  \"title\": \"title\",\n  \"properties\": {\n    \"super-tag\": {\n      \"type\": \"string\",\n      \"title\": \"super-tag\",\n      \"description\": \"超级标签\"\n    },\n    \"time_form\": {\n      \"type\": \"string\",\n      \"title\": \"time_form\",\n      \"description\": \"时间类型\"\n    },\n    \"day_years\": {\n      \"type\": \"string\",\n      \"title\": \"day_years\",\n      \"description\": \"年份\"\n    },\n    \"day_months\": {\n      \"type\": \"string\",\n      \"title\": \"day_months\",\n      \"description\": \"月份\"\n    },\n    \"day_days\": {\n      \"type\": \"string\",\n      \"title\": \"day_days\",\n      \"description\": \"天数\"\n    },\n    \"day_weeks\": {\n      \"type\": \"string\",\n      \"title\": \"day_weeks\",\n      \"description\": \"周期\"\n    },\n    \"year_weeks\": {\n      \"type\": \"string\",\n      \"title\": \"year_weeks\",\n      \"description\": \"当年周数\"\n    },\n    \"year_days\": {\n      \"type\": \"string\",\n      \"title\": \"year_days\",\n      \"description\": \"当年天数\"\n    }\n  },\n  \"required\": [\n    \"super-tag\",\n    \"time_form\",\n    \"day_years\",\n    \"day_months\",\n    \"day_days\",\n    \"day_weeks\",\n    \"year_weeks\",\n    \"year_days\"\n  ]\n}"
+    }
+]

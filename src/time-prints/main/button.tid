@@ -1,4 +1,5 @@
 title: $:/plugins/mabuqian/time-prints/main/components/buttons
+code-body: yes
 
 \define create-events()
 <$button tooltip="点击创建事件">
@@ -33,14 +34,31 @@ title: $:/plugins/mabuqian/time-prints/main/components/buttons
 \end
 
 \define create-days()
+<$let
+day_years=<<now "YYYY" >>
+day_months=<<now "0MM" >>
+year_weeks=<<now "0WW" >>
+tags_year_month={{{ [<day_months>addprefix[-]addprefix<day_years>] }}}
+tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
+>
+<$set name="tags" filter="[<tags_year_month>] [<tags_year_week>]">
 <$button tooltip="点击创建一天">
     <$action-createtiddler
       $basetitle=<<now "YYYY-0MM-0DD" >>
       super-tag="days"
       time_form="days"
+      tags=<<tags>>
+      day_years=<<day_years>>
+      day_months=<<day_months>>
+      day_days=<<now "0DD" >>
+      day_weeks=<<now "dddd" >>
+      year_weeks=<<year_weeks>>
+      year_days=<<now "0ddddd" >>
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
      {{$:/plugins/mabuqian/time-prints/image/day}} 一天
 </$button>
+</$set>
+</$let>
 \end

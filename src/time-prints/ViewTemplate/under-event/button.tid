@@ -1,0 +1,26 @@
+title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/buttons
+
+\define set-time-end()
+<$button tooltip="确定当前时刻结束时刻">
+<$action-setfield time_end=<<now "0hh:0mm" >>/>
+{{$:/plugins/mabuqian/time-prints/image/event}} 结束时刻
+</$button>
+\end
+
+\define set-time-start-end()
+<$let
+	end-hh-ss={{{ [{!!time_end}search-replace[:],[]]  }}}
+	end-hh={{{ [{!!time_end}split[:]] }}}
+	end-ss={{{ [<end-hh-ss>search-replace<end-hh>,[]]  }}}
+	time-end={{{ [<end-hh>multiply[60]add<end-ss>] }}}
+    start-hh-ss={{{ [{!!time_start}search-replace[:],[]]  }}}
+	start-hh={{{ [{!!time_start}split[:]] }}}
+	start-ss={{{ [<start-hh-ss>search-replace<start-hh>,[]]  }}}
+	time-start={{{ [<start-hh>multiply[60]add<start-ss>] }}}
+    time_spent={{{ [<time-end>subtract<time-start>] }}}>
+<$button tooltip="点击确定花费时间">
+<$action-setfield time_spent=<<time_spent>> />
+花费时间 <<time_spent>>
+</$button>
+</$let>
+\end
