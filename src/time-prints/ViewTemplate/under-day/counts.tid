@@ -15,7 +15,7 @@ tags: $:/tags/TP/under-day
     day_amusement_count={{{ [tag<currentTiddler>time_major[娱乐]count[]]  }}}
     day_activites_count={{{ [tag<currentTiddler>time_major[活动]count[]]  }}}
     day_all_count={{{ [tag<currentTiddler>has[time_major]count[]]  }}}
-    >
+>
 
 |类型|生活|学习|工作|娱乐|活动|总共|
 |时间|<<time_day_life>>|<<time_day_study>>|<<time_day_working>>|<<time_day_amusement>>|<<time_day_activites>>|<<time_day_all>>|

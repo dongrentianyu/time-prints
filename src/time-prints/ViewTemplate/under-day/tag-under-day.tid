@@ -1,3 +1,4 @@
 title: $:/tags/TP/under-day
+list: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/counts $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/datails $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/pie-chart $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/day-dynamic-table
 
 use this tags to display today events
