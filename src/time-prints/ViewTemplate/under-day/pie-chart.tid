@@ -1,0 +1,56 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/pie-chart
+tags: $:/tags/TP/under-day
+caption: {{$:/plugins/mabuqian/time-prints/image/analyse}} 饼图
+
+\define pie-chart()
+option = {
+  title: {
+    text: '一天各项占比',
+    left: 'center'
+  },
+  tooltip: {
+    trigger: 'item',
+    formatter: '{b} : {c} ({d}%)'
+  },
+  legend: {
+    bottom: 10,
+    left: 'center',
+    data: ['生活', '学习', '工作', '娱乐', '活动']
+  },
+  series: [
+    {
+      type: 'pie',
+      radius: '65%',
+      center: ['50%', '50%'],
+      selectedMode: 'single',
+      data: [
+        {value: $(time_day_life)$,name: '生活',itemStyle: {color: '#28a745'}},
+        {value: $(time_day_study)$,name: '学习',itemStyle: {color: '#0e90d2'}},
+        {value: $(time_day_working)$,name: '工作',itemStyle: {color: 'orange'}},
+        {value: $(time_day_amusement)$,name: '娱乐',itemStyle: {color: 'red'}},
+        {value: $(time_day_activites)$,name: '活动',itemStyle: {color: 'pink'}}
+
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+};
+\end
+
+<$let
+	  time_day_all={{{ [tag<currentTiddler>has[time_spent]get[time_spent]sum[]]  }}}
+    time_day_life={{{ [tag<currentTiddler>has[time_spent]time_major[生活]get[time_spent]sum[]]  }}}
+    time_day_study={{{ [tag<currentTiddler>has[time_spent]time_major[学习]get[time_spent]sum[]]  }}}
+    time_day_working={{{ [tag<currentTiddler>has[time_spent]time_major[工作]get[time_spent]sum[]]  }}}
+    time_day_amusement={{{ [tag<currentTiddler>has[time_spent]time_major[娱乐]get[time_spent]sum[]]  }}}
+    time_day_activites={{{ [tag<currentTiddler>has[time_spent]time_major[活动]get[time_spent]sum[]]  }}}>
+
+<$echarts $text=<<pie-chart>> />
+
+</$let>

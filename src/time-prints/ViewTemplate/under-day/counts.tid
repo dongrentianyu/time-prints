@@ -1,5 +1,5 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/counts
-caption: 统计
+caption: {{$:/plugins/mabuqian/time-prints/image/analyse}} 统计
 tags: $:/tags/TP/under-day
 
 <$let
@@ -8,10 +8,19 @@ tags: $:/tags/TP/under-day
     time_day_study={{{ [tag<currentTiddler>has[time_spent]time_major[学习]get[time_spent]sum[]]  }}}
     time_day_working={{{ [tag<currentTiddler>has[time_spent]time_major[工作]get[time_spent]sum[]]  }}}
     time_day_amusement={{{ [tag<currentTiddler>has[time_spent]time_major[娱乐]get[time_spent]sum[]]  }}}
-    time_day_activites={{{ [tag<currentTiddler>has[time_spent]time_major[活动]get[time_spent]sum[]]  }}}>
+    time_day_activites={{{ [tag<currentTiddler>has[time_spent]time_major[活动]get[time_spent]sum[]]  }}}
+    day_life_count={{{ [tag<currentTiddler>time_major[生活]count[]]  }}}
+    day_study_count={{{ [tag<currentTiddler>time_major[学习]count[]]  }}}
+    day_working_count={{{ [tag<currentTiddler>time_major[工作]count[]]  }}}
+    day_amusement_count={{{ [tag<currentTiddler>time_major[娱乐]count[]]  }}}
+    day_activites_count={{{ [tag<currentTiddler>time_major[活动]count[]]  }}}
+    day_all_count={{{ [tag<currentTiddler>has[time_major]count[]]  }}}
+    >
 
-|生活|学习|工作|娱乐|活动|总共|
-|<<time_day_life>>|<<time_day_study>>|<<time_day_working>>|<<time_day_amusement>>|<<time_day_activites>>|<<time_day_all>>|
+|类型|生活|学习|工作|娱乐|活动|总共|
+|时间|<<time_day_life>>|<<time_day_study>>|<<time_day_working>>|<<time_day_amusement>>|<<time_day_activites>>|<<time_day_all>>|
+|数量|<<day_life_count>>|<<day_study_count>>|<<day_working_count>>|<<day_amusement_count>>|<<day_activites_count>>|<<day_all_count>>|
+
 
 <$macrocall $name=donut-chart pct={{{ [<time_day_life>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="生活占比" color=green/>
 <$macrocall $name=donut-chart pct={{{ [<time_day_study>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="学习占比" color=blue/>

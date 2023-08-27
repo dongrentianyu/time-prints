@@ -1,0 +1,49 @@
+created: 20230827172154382
+modified: 20230827172248868
+tags: 
+title: bar-chart
+type: text/vnd.tiddlywiki
+
+
+```
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/bar-chart
+tags: $:/tags/TP/under-day
+caption: bar-chart
+
+\define bar-chart()
+option = {
+  xAxis: {
+    type: 'category',
+    data: ['生活', '学习', '工作', '娱乐', '活动']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      data: [{value: $(time_day_life)$,itemStyle: {color: 'green'}},
+             {value: $(time_day_study)$,itemStyle: {color: 'blue'}},
+             {value: $(time_day_working)$,itemStyle: {color: 'orange'}},
+             {value: $(time_day_amusement)$,itemStyle: {color: 'red'}},
+             {value: $(time_day_activites)$,itemStyle: {color: 'pink'}}
+      ],
+      type: 'bar'
+    }
+  ]
+};
+\end
+
+<$let
+	  time_day_all={{{ [tag<currentTiddler>has[time_spent]get[time_spent]sum[]]  }}}
+    time_day_life={{{ [tag<currentTiddler>has[time_spent]time_major[生活]get[time_spent]sum[]]  }}}
+    time_day_study={{{ [tag<currentTiddler>has[time_spent]time_major[学习]get[time_spent]sum[]]  }}}
+    time_day_working={{{ [tag<currentTiddler>has[time_spent]time_major[工作]get[time_spent]sum[]]  }}}
+    time_day_amusement={{{ [tag<currentTiddler>has[time_spent]time_major[娱乐]get[time_spent]sum[]]  }}}
+    time_day_activites={{{ [tag<currentTiddler>has[time_spent]time_major[活动]get[time_spent]sum[]]  }}}>
+
+<$echarts $text=<<bar-chart>> />
+
+</$let>
+```
+
+试用了一下，效果不是很好，但思路可以参考。注意如何传入参数。
