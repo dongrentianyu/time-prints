@@ -1,0 +1,15 @@
+title: $:/plugins/mabuqian/time-prints/ControlPanel/Settings
+caption: Time Prints
+tags: $:/tags/ControlPanel/SettingsTab
+
+在下面填写对应项目的值，在新建条目时可以进行选择
+
+[[生活|$:/plugins/mabuqian/time-prints/Config/life-specific]]：<$edit-text tiddler="$:/plugins/mabuqian/time-prints/Config/life-specific" field="text" tag=input class="w-100" />
+
+[[学习|$:/plugins/mabuqian/time-prints/Config/study-specific]]：<$edit-text tiddler="$:/plugins/mabuqian/time-prints/Config/study-specific" field="text" tag=input class="w-100" />
+
+[[娱乐|$:/plugins/mabuqian/time-prints/Config/amusement-specific]]：<$edit-text tiddler="$:/plugins/mabuqian/time-prints/Config/amusement-specific" field="text" tag=input class="w-100" />
+
+[[活动|$:/plugins/mabuqian/time-prints/Config/activites-specific]]：<$edit-text tiddler="$:/plugins/mabuqian/time-prints/Config/activites-specific" field="text" tag=input class="w-100" />
+
+[[工作|$:/plugins/mabuqian/time-prints/Config/working-specific]]：<$edit-text tiddler="$:/plugins/mabuqian/time-prints/Config/working-specific" field="text" tag=input class="w-100" />

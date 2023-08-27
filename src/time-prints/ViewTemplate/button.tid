@@ -41,7 +41,11 @@ grid-row-gap: 10px;
 <div class="parent">
 <div class="div1">
 <$select tiddler='$:/state/tf/select-edit-specific' field='testing' multiple size='8' class="w-100">
-<$list filter='[time_major{!!time_major}get[time_specific]unique[]]'>
+<$list filter='[<currentTiddler>get[time_major]match[生活]then{$:/plugins/mabuqian/time-prints/Config/life-specific}enlist-input[]unique[]]
+[<currentTiddler>get[time_major]match[学习]then{$:/plugins/mabuqian/time-prints/Config/study-specific}enlist-input[]unique[]]
+[<currentTiddler>get[time_major]match[娱乐]then{$:/plugins/mabuqian/time-prints/Config/amusement-specific}enlist-input[]unique[]]
+[<currentTiddler>get[time_major]match[工作]then{$:/plugins/mabuqian/time-prints/Config/working-specific}enlist-input[]unique[]]
+[<currentTiddler>get[time_major]match[活动]then{$:/plugins/mabuqian/time-prints/Config/activites-specific}enlist-input[]unique[]]'>
 <option><$view field='title'/></option>
 </$list>
 </$select>
