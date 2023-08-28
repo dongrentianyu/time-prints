@@ -2,12 +2,16 @@ title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/components
 tags: $:/tags/ViewTemplate
 list-before: $:/plugins/mabuqian/time-prints/ViewTemplate/super-tag
 
-\import [[$:/plugins/mabuqian/time-prints/main/components/buttons]]
+\import [[$:/plugins/mabuqian/time-prints/main/components/buttons]] [[$:/plugins/mabuqian/time-prints/view-template/under-day/components/buttons]]
 
 <$list filter="[<currentTiddler>time_form[days]!prefix[$:/]]">
 <div class="tp-sidebar-project-list-item" >
 <<create-events-under-day>>&nbsp;&nbsp;
+<<create-events-specific-under-day>>&nbsp;&nbsp;
+<<create-events-detail-under-day>>&nbsp;&nbsp;
 </div>
+
+<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-select" mode="block"/>
 
 <details>
   <summary>查看更多内容</summary>

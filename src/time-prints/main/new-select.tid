@@ -1,11 +1,4 @@
 title: $:/plugins/mabuqian/time-prints/main/new-select
 
-major: <<select-field-search "time_major" "tp-time_major">>
-生活：<<select-filter-search "[[$:/plugins/mabuqian/time-prints/Config/life-specific]get[text]]" "tp-time_specific" >>
-学习：<<select-filter-search "[[$:/plugins/mabuqian/time-prints/Config/study-specific]get[text]]" "tp-time_specific" >>
-<br/>
-娱乐：<<select-filter-search "[[$:/plugins/mabuqian/time-prints/Config/amusement-specific]get[text]]" "tp-time_specific" >>
-活动：<<select-filter-search "[[$:/plugins/mabuqian/time-prints/Config/activites-specific]get[text]]" "tp-time_specific" >>
-工作：<<select-filter-search "[[$:/plugins/mabuqian/time-prints/Config/working-specific]get[text]]" "tp-time_specific" >>
-
-常用配置：<<select-filter-search "[has[time_detail]sort[modified]get[time_detail]!prefix[$:/]unique[]last{$:/plugins/mabuqian/time-prints/Config/last-number}] [[$:/plugins/mabuqian/time-prints/Config/time-detail]get[text]]" "tp-time_detail" >>
+|!major|!生活|!学习|!娱乐|!活动|!工作|!常用配置|
+| <<select-field-search "time_major" "tp-time_major">> |<<select-filter-search "[[$:/plugins/mabuqian/time-prints/Config/life-specific]get[text]]" "tp-time_specific" >> |<<select-filter-search "[[$:/plugins/mabuqian/time-prints/Config/study-specific]get[text]]" "tp-time_specific" >>  |<<select-filter-search "[[$:/plugins/mabuqian/time-prints/Config/amusement-specific]get[text]]" "tp-time_specific" >> |<<select-filter-search "[[$:/plugins/mabuqian/time-prints/Config/activites-specific]get[text]]" "tp-time_specific" >> |<<select-filter-search "[[$:/plugins/mabuqian/time-prints/Config/working-specific]get[text]]" "tp-time_specific" >> |<<select-filter-search "[has[time_detail]sort[modified]get[time_detail]!prefix[$:/]unique[]last{$:/plugins/mabuqian/time-prints/Config/last-number}] [[$:/plugins/mabuqian/time-prints/Config/time-detail]get[text]]" "tp-time_detail" >>|

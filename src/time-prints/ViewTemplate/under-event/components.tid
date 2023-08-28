@@ -13,10 +13,10 @@ list-before: $:/plugins/mabuqian/time-prints/ViewTemplate/super-tag
 <<create-events-detail-under-event>>&nbsp;&nbsp;
 </div>
 
+<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-select" mode="block"/>
+
 <details>
   <summary>添加当前内容</summary>
-
-{{$:/plugins/mabuqian/time-prints/main/new-select}}
 
 <<select-edit-specific>>
 </details>

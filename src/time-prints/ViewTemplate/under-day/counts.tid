@@ -17,9 +17,9 @@ tags: $:/tags/TP/under-day
     day_all_count={{{ [tag<currentTiddler>has[time_major]count[]]  }}}
 >
 
-|类型|生活|学习|工作|娱乐|活动|总共|
-|时间|<<time_day_life>>|<<time_day_study>>|<<time_day_working>>|<<time_day_amusement>>|<<time_day_activites>>|<<time_day_all>>|
-|数量|<<day_life_count>>|<<day_study_count>>|<<day_working_count>>|<<day_amusement_count>>|<<day_activites_count>>|<<day_all_count>>|
+|!类型|!生活|!学习|!工作|!娱乐|!活动|!总共|
+|!时间|<<time_day_life>>|<<time_day_study>>|<<time_day_working>>|<<time_day_amusement>>|<<time_day_activites>>|<<time_day_all>>|
+|!数量|<<day_life_count>>|<<day_study_count>>|<<day_working_count>>|<<day_amusement_count>>|<<day_activites_count>>|<<day_all_count>>|
 
 
 <$macrocall $name=donut-chart pct={{{ [<time_day_life>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="生活占比" color=green/>

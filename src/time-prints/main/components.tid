@@ -8,10 +8,9 @@ title: $:/plugins/mabuqian/time-prints/main/components
 
 <div class="tp-sidebar-project-list-item" >
 <<create-events>>&nbsp;&nbsp;
-<<create-days>>&nbsp;&nbsp;
 <<create-events-specific>>&nbsp;&nbsp;
 <<create-events-detail>>&nbsp;&nbsp;
+<<create-days>>&nbsp;&nbsp;
 </div>
 
-{{$:/plugins/mabuqian/time-prints/main/new-select}}
-
+<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-select" mode="block"/>
