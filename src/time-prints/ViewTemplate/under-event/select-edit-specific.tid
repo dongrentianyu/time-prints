@@ -4,18 +4,22 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/sele
 <style>
 .parent {
 display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(5, 1fr);
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(6, 1fr);
 grid-column-gap: 10px;
 grid-row-gap: 10px;
 }
-.div1 { grid-area: 1 / 1 / 6 / 2; }
-.div2 { grid-area: 1 / 2 / 5 / 3; }
-.div3 { grid-area: 5 / 2 / 6 / 3; }
+
+.div1 { grid-area: 1 / 1 / 7 / 2; }
+.div2 { grid-area: 1 / 2 / 3 / 3; }
+.div3 { grid-area: 3 / 2 / 4 / 3; }
+.div4 { grid-area: 1 / 3 / 7 / 4; }
+.div5 { grid-area: 5 / 2 / 7 / 3; }
+.div6 { grid-area: 4 / 2 / 5 / 3; }
 </style>
 <div class="parent">
 <div class="div1">
-<$select tiddler='$:/state/tf/select-edit-specific' field='testing' multiple size='8' class="w-100">
+<$select tiddler='$:/state/tf/select-edit-specific' field='testing' multiple size='8' class="w-100 h-100">
 <$list filter='[<currentTiddler>get[time_major]match[生活]then{$:/plugins/mabuqian/time-prints/Config/life-specific}enlist-input[]unique[]]
 [<currentTiddler>get[time_major]match[学习]then{$:/plugins/mabuqian/time-prints/Config/study-specific}enlist-input[]unique[]]
 [<currentTiddler>get[time_major]match[娱乐]then{$:/plugins/mabuqian/time-prints/Config/amusement-specific}enlist-input[]unique[]]
@@ -29,9 +33,25 @@ grid-row-gap: 10px;
 <$edit-text  field="time_specific" class="w-100 h-100" tag=textarea/>
 </div>
 <div class="div3">
-<$button tooltip="确定添加当前内容">
+<$button  class="w-100 h-100" tooltip="确定添加specific">
 <$action-setfield  time_specific={{{ [[$:/state/tf/select-edit-specific]get[testing]] }}}   />
-确认添加
+specific
+</$button>
+</div>
+<div class="div4">
+<$select tiddler='$:/state/tf/select-edit-detail' field='testing' multiple size='8' class="w-100 h-100">
+<$list filter='[has[time_detail]sort[modified]get[time_detail]!prefix[$:/]unique[]last{$:/plugins/mabuqian/time-prints/Config/last-number}] [[$:/plugins/mabuqian/time-prints/Config/time-detail]get[text]] +[enlist-input[]!prefix[$:/]unique[]]'>
+<option><$view field='title'/></option>
+</$list>
+</$select>
+</div>
+<div class="div5">
+<$edit-text  field="time_detail" class="w-100 h-100" tag=textarea/>
+</div>
+<div class="div6">
+<$button class="w-100 h-100" tooltip="确定添加detail">
+<$action-setfield time_detail={{{ [[$:/state/tf/select-edit-detail]get[testing]] }}}   />
+detail
 </$button>
 </div>
 </div>
