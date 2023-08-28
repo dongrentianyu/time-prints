@@ -6,7 +6,7 @@ tags: $:/tags/TP/under-day
 
 <$list filter='[tag<currentTiddler>sort[time_major]each[time_major]]'>
 
-! {{!!time_major}}
+!! {{!!time_major}}
 
 <div style="column-count: 4;
     display: flex;
@@ -17,12 +17,11 @@ tags: $:/tags/TP/under-day
 
 <$list filter='[tag<graphRootTiddler>time_major{!!time_major}]'>
 
-!! <$link><<currentTiddler>></$link>
+<$link><<currentTiddler>></$link>
 
 </$list>
 
 </div>
 
----
 </$list>
 </$let>
