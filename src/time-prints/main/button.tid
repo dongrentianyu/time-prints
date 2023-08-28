@@ -86,11 +86,11 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
 \define create-events-specific()
 <$button tooltip="快速创建事件">
     <$action-createtiddler
-      $basetitle={{$:/state/select-field-search/tp-time_specific}}
+      $basetitle={{{ [[$:/state/select-field-search/tp-time_specific]get[text]] }}}
       super-tag="time"
       time_form="events" 
       time_major={{{ [[$:/state/select-field-search/tp-time_major]get[text]] [[生活]] +[first[]] }}}
-	    time_specific={{$:/state/select-field-search/tp-time_specific}}
+	    time_specific={{{ [[$:/state/select-field-search/tp-time_specific]get[text]] }}}
       time_record="正常记录"
       time_day=<<now "YYYY-0MM-0DD" >>
       tags=<<now "YYYY-0MM-0DD" >>
@@ -106,12 +106,12 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
 \define create-events-detail()
 <$button tooltip="快速创建事件">
     <$action-createtiddler
-      $basetitle={{$:/state/select-field-search/tp-time_detail}}
+      $basetitle={{{ [[$:/state/select-field-search/tp-time_detail]get[text]] }}}
       super-tag="time"
       time_form="events"
       time_major={{{ [[$:/state/select-field-search/tp-time_major]get[text]] [[生活]] +[first[]] }}}
-	    time_specific={{$:/state/select-field-search/tp-time_specific}}
-      time_detail={{$:/state/select-field-search/tp-time_detail}}
+	    time_specific={{{ [[$:/state/select-field-search/tp-time_specific]get[text]] }}}
+      time_detail={{{ [[$:/state/select-field-search/tp-time_detail]get[text]] }}}
       time_record="正常记录"
       time_day=<<now "YYYY-0MM-0DD" >>
       tags=<<now "YYYY-0MM-0DD" >>

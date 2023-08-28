@@ -9,6 +9,8 @@ list-before: $:/plugins/mabuqian/time-prints/ViewTemplate/super-tag
 <<set-time-end>>&nbsp;&nbsp;
 <<set-time-start-end>>&nbsp;&nbsp;
 <<create-events-under-event>>&nbsp;&nbsp;
+<<create-events-specific-under-event>>&nbsp;&nbsp;
+<<create-events-detail-under-event>>&nbsp;&nbsp;
 </div>
 
 <details>
