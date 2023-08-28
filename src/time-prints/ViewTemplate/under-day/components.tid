@@ -6,13 +6,13 @@ list-before: $:/plugins/mabuqian/time-prints/ViewTemplate/super-tag
 
 <$list filter="[<currentTiddler>time_form[days]!prefix[$:/]]">
 <div class="tp-sidebar-project-list-item" >
-<<create-events>>&nbsp;&nbsp;
+<<create-events-under-day>>&nbsp;&nbsp;
 </div>
 
 <details>
   <summary>查看更多内容</summary>
 
-<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-day]]" "$:/plugins/mabuqian/time-prints/ViewTemplate/under-day/day-dynamic-table" "$:/state/tp/under-day" "tc-vertical">>
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-day]]" "$:/plugins/mabuqian/time-prints/ViewTemplate/under-day/dynmaic-data" "$:/state/tp/under-day" "tc-vertical">>
 
 </details>
 </$list>

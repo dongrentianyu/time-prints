@@ -62,3 +62,24 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
 </$set>
 </$let>
 \end
+
+\define create-events-under-day()
+<$let time-end={{{ [tag<currentTiddler>has[time_end]sort[time_end]last[1]get[time_end]] }}} >
+<$button tooltip="点击创建事件">
+    <$action-createtiddler
+      $basetitle={{$:/state/TP/PageLayout/create-tiddler-title}}
+      super-tag="time"
+      time_form="events"
+      time_major="生活"
+      time_record="正常记录"
+      time_day=<<now "YYYY-0MM-0DD" >>
+      tags=<<now "YYYY-0MM-0DD" >>
+      time_start=<<time-end>>
+      time_end=<<now "0hh:0mm" >>
+     >
+     <<after-create-tiddler-without-parent>>
+     </$action-createtiddler>
+     {{$:/plugins/mabuqian/time-prints/image/event}} 事件
+</$button>
+</$let>
+\end
