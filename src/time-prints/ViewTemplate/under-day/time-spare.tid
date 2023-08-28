@@ -4,8 +4,14 @@ tags: $:/tags/TP/under-day
 
 <$let
  time_day_all={{{ [tag<currentTiddler>has[time_spent]get[time_spent]sum[]]  }}}
- time-spare={{{ [[1440]subtract<time_day_all>] }}} >
-一天中剩余：<<time-spare>> 分钟
+ now_hour=<<now "0hh" >>
+ now_mm=<<now "0mm" >>
+ now_time={{{ [<now_hour>multiply[60]add<now_mm>]  }}}
+ time-spare={{{ [[1440]subtract<time_day_all>] }}}
+ time-real-spare={{{ [[1440]subtract<now_time>]  }}} >
+一天中实际剩余：<<time-real-spare>> 分钟
+
+还可记录：<<time-spare>> 分钟
 </$let>
 
 最后两次结束时刻
