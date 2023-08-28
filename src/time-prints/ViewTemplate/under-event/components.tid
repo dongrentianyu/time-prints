@@ -7,11 +7,15 @@ list-before: $:/plugins/mabuqian/time-prints/ViewTemplate/super-tag
 <$list filter="[<currentTiddler>time_form[events]!prefix[$:/]]">
 <div class="tp-sidebar-project-list-item" >
 <<set-time-end>>&nbsp;&nbsp;
-<<set-time-start-end>>
+<<set-time-start-end>>&nbsp;&nbsp;
+<<create-events-under-event>>&nbsp;&nbsp;
 </div>
 
 <details>
   <summary>添加当前内容</summary>
+
+{{$:/plugins/mabuqian/time-prints/main/new-select}}
+
 <<select-edit-specific>>
 </details>
 </$list>

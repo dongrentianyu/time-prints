@@ -5,7 +5,7 @@ tags: $:/tags/TP/under-day
 <$let
  time_day_all={{{ [tag<currentTiddler>has[time_spent]get[time_spent]sum[]]  }}}
  time-spare={{{ [[1440]subtract<time_day_all>] }}} >
-一天中剩余：<<time-spare>>
+一天中剩余：<<time-spare>> 分钟
 </$let>
 
 最后两次结束时刻

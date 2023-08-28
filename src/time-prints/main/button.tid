@@ -27,10 +27,9 @@ code-body: yes
   <$action-sendmessage $message="tm-auto-save-wiki" />
   <$action-sendmessage $message="tm-edit-tiddler" $param=<<createTiddler-title>>/>
  </$let>
- <$action-setfield
-  $tiddler="$:/state/TP/PageLayout/create-tiddler-title"
-  text=""
- />
+  <$action-setfield $tiddler="$:/state/TP/PageLayout/create-tiddler-title" text="" />
+ 	<$action-setfield $tiddler="$:/state/select-field-search/tp-time_major" text="" />
+	<$action-setfield $tiddler="$:/state/select-field-search/tp-time_specific" text="" />
 \end
 
 \define create-days()
@@ -65,7 +64,7 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
 
 \define create-events-under-day()
 <$let time-end={{{ [tag<currentTiddler>has[time_end]sort[time_end]last[1]get[time_end]] }}} >
-<$button tooltip="点击创建事件">
+<$button tooltip="点击创建事件，在最后一次时间基础上">
     <$action-createtiddler
       $basetitle={{$:/state/TP/PageLayout/create-tiddler-title}}
       super-tag="time"
@@ -79,7 +78,27 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/event}} 事件
+     {{$:/plugins/mabuqian/time-prints/image/event}} 事件 <<time-end>>
 </$button>
 </$let>
+\end
+
+\define create-events-quickly()
+<$button tooltip="快速创建事件">
+    <$action-createtiddler
+      $basetitle={{{$:/state/select-field-search/tp-time_specific}}
+      super-tag="time"
+      time_form="events"
+      time_major={{{ [{$:/state/select-field-search/tp-time_major}else[生活]] }}}
+	    time_specific={{$:/state/select-field-search/tp-time_specific}}
+      time_record="正常记录"
+      time_day=<<now "YYYY-0MM-0DD" >>
+      tags=<<now "YYYY-0MM-0DD" >>
+      time_start=<<now "0hh:0mm" >>
+      time_end=<<now "0hh:0mm" >>
+     >
+     <<after-create-tiddler-without-parent>>
+     </$action-createtiddler>
+     {{$:/plugins/mabuqian/time-prints/image/event}} 快速创建事件
+</$button>
 \end
