@@ -9,16 +9,9 @@ title: $:/plugins/mabuqian/time-prints/main/components
 <div class="tp-sidebar-project-list-item" >
 <<create-events>>&nbsp;&nbsp;
 <<create-days>>&nbsp;&nbsp;
-<<create-events-quickly>>&nbsp;&nbsp;
+<<create-events-specific>>&nbsp;&nbsp;
+<<create-events-detail>>&nbsp;&nbsp;
 </div>
 
 {{$:/plugins/mabuqian/time-prints/main/new-select}}
 
-<details>
-  <summary>从具体内容选择</summary>
-<$select tiddler='$:/state/tf/main/specific' field='testing' multiple size='8' class="w-50">
-<$list filter='[has[time_major]!!field:time_major[学习]get[time_specific]unique[]]'>
-<option><$view field='title'/></option>
-</$list>
-</$select>
-</details>

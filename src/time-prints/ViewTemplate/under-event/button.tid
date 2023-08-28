@@ -31,7 +31,7 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/butt
       $basetitle={{$:/state/TP/PageLayout/create-tiddler-title}}
       super-tag="time"
       time_form="events"
-      time_major={{{ [{$:/state/select-field-search/tp-time_major}else[生活]] }}}
+      time_major={{{ [[$:/state/select-field-search/tp-time_major]get[text]] [[生活]] +[first[]] }}}
 	  time_specific={{$:/state/select-field-search/tp-time_specific}}
       time_record="正常记录"
       time_day=<<now "YYYY-0MM-0DD" >>

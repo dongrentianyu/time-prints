@@ -13,3 +13,5 @@ tags: $:/tags/ControlPanel/SettingsTab
 [[活动|$:/plugins/mabuqian/time-prints/Config/activites-specific]]：<$edit-text tiddler="$:/plugins/mabuqian/time-prints/Config/activites-specific" field="text" tag=input class="w-100" />
 
 [[工作|$:/plugins/mabuqian/time-prints/Config/working-specific]]：<$edit-text tiddler="$:/plugins/mabuqian/time-prints/Config/working-specific" field="text" tag=input class="w-100" />
+
+[[常用配置|$:/plugins/mabuqian/time-prints/Config/time-detail]]：<$edit-text tiddler="$:/plugins/mabuqian/time-prints/Config/time-detail" field="text" tag=input class="w-100" />

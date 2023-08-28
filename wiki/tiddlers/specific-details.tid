@@ -1,0 +1,17 @@
+created: 20230828111114281
+modified: 20230828111159399
+tags: 代码存放
+title: specific-details
+type: text/vnd.tiddlywiki
+
+
+```
+<details>
+  <summary>从具体内容选择</summary>
+<$select tiddler='$:/state/tf/main/specific' field='testing' multiple size='8' class="w-50">
+<$list filter='[has[time_major]!!field:time_major[学习]get[time_specific]unique[]]'>
+<option><$view field='title'/></option>
+</$list>
+</$select>
+</details>
+```

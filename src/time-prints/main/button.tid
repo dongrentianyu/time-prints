@@ -83,13 +83,13 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
 </$let>
 \end
 
-\define create-events-quickly()
+\define create-events-specific()
 <$button tooltip="快速创建事件">
     <$action-createtiddler
-      $basetitle={{{$:/state/select-field-search/tp-time_specific}}
+      $basetitle={{$:/state/select-field-search/tp-time_specific}}
       super-tag="time"
-      time_form="events"
-      time_major={{{ [{$:/state/select-field-search/tp-time_major}else[生活]] }}}
+      time_form="events" 
+      time_major={{{ [[$:/state/select-field-search/tp-time_major]get[text]] [[生活]] +[first[]] }}}
 	    time_specific={{$:/state/select-field-search/tp-time_specific}}
       time_record="正常记录"
       time_day=<<now "YYYY-0MM-0DD" >>
@@ -99,6 +99,27 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/event}} 快速创建事件
+     {{$:/plugins/mabuqian/time-prints/image/event}} specific
+</$button>
+\end
+
+\define create-events-detail()
+<$button tooltip="快速创建事件">
+    <$action-createtiddler
+      $basetitle={{$:/state/select-field-search/tp-time_detail}}
+      super-tag="time"
+      time_form="events"
+      time_major={{{ [[$:/state/select-field-search/tp-time_major]get[text]] [[生活]] +[first[]] }}}
+	    time_specific={{$:/state/select-field-search/tp-time_specific}}
+      time_detail={{$:/state/select-field-search/tp-time_detail}}
+      time_record="正常记录"
+      time_day=<<now "YYYY-0MM-0DD" >>
+      tags=<<now "YYYY-0MM-0DD" >>
+      time_start=<<now "0hh:0mm" >>
+      time_end=<<now "0hh:0mm" >>
+     >
+     <<after-create-tiddler-without-parent>>
+     </$action-createtiddler>
+     {{$:/plugins/mabuqian/time-prints/image/event}} detail
 </$button>
 \end
