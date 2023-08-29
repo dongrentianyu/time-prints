@@ -3,3 +3,5 @@ tags: $:/tags/TiddlerIconFilter
 list-before: $:/config/TiddlerIconFilters/default
 
 [time_form[events]then[$:/plugins/mabuqian/time-prints/image/event]]
+[time_form[days]then[$:/plugins/mabuqian/time-prints/image/day]]
+[time_form[weeks]then[$:/plugins/mabuqian/time-prints/image/week]]

@@ -17,7 +17,7 @@ tags: $:/tags/TP/under-day
 
 <$list filter='[tag<graphRootTiddler>time_major{!!time_major}]'>
 
-<$link><<currentTiddler>></$link>
+<$link><<currentTiddler>></$link>&nbsp;&nbsp;{{!!time_spent}}
 
 </$list>
 

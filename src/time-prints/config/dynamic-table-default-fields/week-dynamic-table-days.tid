@@ -1,0 +1,3 @@
+title: $:/plugins/mabuqian/time-prints/Config/week-dynamic-table-days
+
+tbl-expand title time_day_life time_day_study time_day_working time_day_amusement time_day_activites time_day_all

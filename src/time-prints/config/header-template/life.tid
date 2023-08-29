@@ -1,0 +1,26 @@
+tags: $:/tags/Table/HeaderTemplate
+tbl-column-list: time_day_life
+title: $:/plugins/mabuqian/time-prints/Config/header-template/life
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" stateTitle=<<tempTableSort>> stateIndex="sortIndex" text=<<currentColumn>> tag="th">
+<$button setTitle=<<tempTableSort>> setIndex="sortIndex" setTo=<<currentColumn>> class="tc-btn-invisible tc-tiddlylink" >
+<$action-setfield $tiddler=<<tempTableSort>> $index="hasnegate" $value="false"/>
+<$action-setfield $tiddler=<<tempTableSort>> $index="negate" $value=""/>
+<span style="text-transform: capitalize;"><$transclude tiddler=<<currentColumn>> field="tbl_caption"> 生活 </$transclude></span>
+</$button>
+</$reveal>
+<$reveal type="match" stateTitle=<<tempTableSort>> stateIndex="sortIndex" text=<<currentColumn>> tag="th">
+<$list filter="[<tempTableSort>getindex[hasnegate]match[false]]" variable=ignore><!--set negate for sort-->
+<$button setTitle=<<tempTableSort>> setIndex="hasnegate" setTo="true" class="tbl-sort-svg tc-btn-invisible tc-tiddlylink" >
+<$action-setfield $tiddler=<<tempTableSort>> $index="negate" $value="!"/>
+<span style="text-transform: capitalize;"><$transclude tiddler=<<currentColumn>> field="tbl_caption"> 生活 </$transclude></span> {{$:/core/images/down-arrow}}
+</$button>
+</$list>
+<$list filter="[<tempTableSort>getindex[hasnegate]match[true]]" variable=ignore><!--remove negate for sort-->
+<$button setTitle=<<tempTableSort>> setIndex="hasnegate" setTo="false" class="tbl-sort-svg tc-btn-invisible tc-tiddlylink" >
+<$action-setfield $tiddler=<<tempTableSort>> $index="negate" $value=""/>
+<span style="text-transform: capitalize;"><$transclude tiddler=<<currentColumn>> field="tbl_caption"> 生活 </$transclude></span> {{$:/core/images/up-arrow}}
+</$button>
+</$list>
+</$reveal>

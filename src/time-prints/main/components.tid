@@ -10,7 +10,19 @@ title: $:/plugins/mabuqian/time-prints/main/components
 <<create-events>>&nbsp;&nbsp;
 <<create-events-specific>>&nbsp;&nbsp;
 <<create-events-detail>>&nbsp;&nbsp;
+</div>
+<div class="tp-sidebar-project-list-item" >
 <<create-days>>&nbsp;&nbsp;
+<<create-weeks>>&nbsp;&nbsp;
 </div>
 
 <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-select" mode="block"/>
+
+<$let
+week_years=<<now "YYYY" >>
+year_weeks=<<now "0WW" >>
+title_year_week={{{ [<year_weeks>addprefix[-]addprefix<week_years>] }}}
+>
+<$link to=<<now "YYYY-0MM-0DD" >> > <<now "YYYY-0MM-0DD" >> </$link>&nbsp;&nbsp;
+<$link to=<<title_year_week>> > <<title_year_week>> </$link>
+</$let>

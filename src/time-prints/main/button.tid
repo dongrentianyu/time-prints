@@ -123,3 +123,24 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
      {{$:/plugins/mabuqian/time-prints/image/event}} detail
 </$button>
 \end
+
+\define create-weeks()
+<$let
+week_years=<<now "YYYY" >>
+year_weeks=<<now "0WW" >>
+title_year_week={{{ [<year_weeks>addprefix[-]addprefix<week_years>] }}}
+>
+<$button tooltip="点击创建一周">
+    <$action-createtiddler
+      $basetitle=<<title_year_week>>
+      time_form="weeks"
+      tags=""
+      week_years=<<week_years>>
+      week_num=<<year_weeks>>
+     >
+     <<after-create-tiddler-without-parent>>
+     </$action-createtiddler>
+     {{$:/plugins/mabuqian/time-prints/image/week}} 一周
+</$button>
+</$let>
+\end

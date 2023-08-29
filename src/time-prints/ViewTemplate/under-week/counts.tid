@@ -1,0 +1,38 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-week/counts
+caption: {{$:/plugins/mabuqian/time-prints/image/analyse}} 占比
+tags: $:/tags/TP/under-week
+
+<$let
+	time_week_all={{{ [tag<currentTiddler>has[time_day_all]get[time_day_all]sum[]]  }}}
+    time_week_life={{{ [tag<currentTiddler>has[time_day_life]get[time_day_life]sum[]]  }}}
+    time_week_study={{{ [tag<currentTiddler>has[time_day_study]get[time_day_study]sum[]]  }}}
+    time_week_working={{{ [tag<currentTiddler>has[time_day_working]get[time_day_working]sum[]]  }}}
+    time_week_amusement={{{ [tag<currentTiddler>has[time_day_amusement]get[time_day_amusement]sum[]]  }}}
+    time_week_activites={{{ [tag<currentTiddler>has[time_day_activites]get[time_day_activites]sum[]]  }}}
+>
+
+|!类型|!生活|!学习|!工作|!娱乐|!活动|!总共|
+|!时间|<<time_week_life>>|<<time_week_study>>|<<time_week_working>>|<<time_week_amusement>>|<<time_week_activites>>|<<time_week_all>>|
+
+
+
+<$macrocall $name=donut-chart pct={{{ [<time_week_life>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="生活占比" color=green/>
+<$macrocall $name=donut-chart pct={{{ [<time_week_study>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="学习占比" color=blue/>
+<$macrocall $name=donut-chart pct={{{ [<time_weej_working>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="工作占比" color=orange/>
+<$macrocall $name=donut-chart pct={{{ [<time_week_amusement>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="娱乐占比" color=red/>
+<$macrocall $name=donut-chart pct={{{ [<time_week_activites>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="活动占比" color=pink/>
+<$macrocall $name=donut-chart pct={{{ [<time_week_all>divide[10080]fixed[4]multiply[100]round[]] }}}  label="一周占比" color=brown/>
+
+<$button tooltip="一周结束后，进行赋值">
+<$action-setfield
+time_week_all=<<time_week_all>>
+time_week_life=<<time_week_life>>
+time_week_study=<<time_week_study>>
+time_week_working=<<time_week_working>>
+time_week_amusement=<<time_week_amusement>>
+time_week_activites=<<time_week_activites>>
+/>
+{{$:/plugins/mabuqian/time-prints/image/week}} 赋值
+</$button>
+
+</$let>
