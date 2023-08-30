@@ -7,10 +7,10 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-day/components/button
       super-tag="time"
       time_form="events" 
       time_major={{{ [[$:/state/select-field-search/tp-time_major]get[text]] [[生活]] +[first[]] }}}
-	  time_specific={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
+	    time_specific={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
       time_record="正常记录"
-      time_day=<<now "YYYY-0MM-0DD" >>
-      tags=<<now "YYYY-0MM-0DD" >>
+      time_day=<<currentTiddler>>
+      tags=<<currentTiddler>>
       time_start={{{[tag<currentTiddler>has[time_end]sort[time_end]last[1]get[time_end]] }}}
       time_end=<<now "0hh:0mm" >>
      >
@@ -30,8 +30,8 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-day/components/button
 	  time_specific={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
       time_detail={{{ [[$:/state/select-filter-search/tp-time_detail]get[text]] }}}
       time_record="正常记录"
-      time_day=<<now "YYYY-0MM-0DD" >>
-      tags=<<now "YYYY-0MM-0DD" >>
+      time_day=<<currentTiddler>>
+      tags=<<currentTiddler>>
       time_start={{{ [tag<currentTiddler>has[time_end]sort[time_end]last[1]get[time_end]] }}}
       time_end=<<now "0hh:0mm" >>
      >

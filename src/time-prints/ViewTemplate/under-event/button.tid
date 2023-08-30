@@ -34,8 +34,8 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/butt
       time_major="生活"
 	  time_specific=""
       time_record="正常记录"
-      time_day=<<now "YYYY-0MM-0DD" >>
-      tags=<<now "YYYY-0MM-0DD" >>
+      time_day={{!!tags}}
+      tags={{!!tags}}
       time_start={{!!time_end}}
       time_end=<<now "0hh:0mm" >>
      >
@@ -54,8 +54,8 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/butt
       time_major={{{ [[$:/state/select-field-search/tp-time_major]get[text]] [[生活]] +[first[]] }}}
 	    time_specific={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
       time_record="正常记录"
-      time_day=<<now "YYYY-0MM-0DD" >>
-      tags=<<now "YYYY-0MM-0DD" >>
+      time_day={{!!tags}}
+      tags={{!!tags}}
       time_start={{!!time_end}}
       time_end=<<now "0hh:0mm" >>
      >
@@ -75,8 +75,8 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/butt
 	    time_specific={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
       time_detail={{{ [[$:/state/select-filter-search/tp-time_detail]get[text]] }}}
       time_record="正常记录"
-      time_day=<<now "YYYY-0MM-0DD" >>
-      tags=<<now "YYYY-0MM-0DD" >>
+      time_day={{!!tags}}
+      tags={{!!tags}}
       time_start={{!!time_end}}
       time_end=<<now "0hh:0mm" >>
      >
