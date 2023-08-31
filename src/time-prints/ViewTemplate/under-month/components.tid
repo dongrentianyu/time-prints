@@ -1,0 +1,13 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-month/components
+tags: $:/tags/ViewTemplate
+list-before: $:/core/ui/ViewTemplate/body
+
+<$list filter="[<currentTiddler>time_form[months]!prefix[$:/]]">
+
+<details>
+<summary>查看本月内容</summary>
+
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-month]]" "$:/plugins/mabuqian/time-prints/ViewTemplate/under-week/dynmaic-data" "$:/state/tp/under-month" "tc-vertical">>
+
+</details>
+</$list>

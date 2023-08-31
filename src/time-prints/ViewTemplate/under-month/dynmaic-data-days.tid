@@ -1,0 +1,13 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-month/dynmaic-data-days
+tags: $:/tags/TP/under-month
+caption: {{$:/plugins/mabuqian/time-prints/image/list-details}} 统计
+
+<$macrocall 
+$name=table-dynamic
+filter="[tag<currentTiddler>has[day_months]sort[day_months]]"
+class="w-100 thead-secondary table-hover-cyan"
+fields={{$:/plugins/mabuqian/time-prints/Config/month-dynamic-table-days}}
+caption=<<now "YYYY-0MM-0DD hh:0mm:0ss">>
+stateTiddler="TP-month-dynamic-table-days-state"
+footerRows="7"
+/>

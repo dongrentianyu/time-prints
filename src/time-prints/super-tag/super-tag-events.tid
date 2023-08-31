@@ -1,0 +1,9 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/super-tag-events
+list-before: $:/plugins/kookma/utility/viewtemplates/view-fields
+tags: $:/tags/ViewTemplate
+
+<$list filter="[<currentTiddler>has[super-tag]super-tag[events]!prefix[$:/]]">
+
+<$json-editor-form filter="[all[current]enlist{!!super-tag}tags[]] :filter[tags[]match[$:/SuperTag/TraitTag]] :and[get[schema]]" tiddler=<<currentTiddler>> />
+
+</$list>

@@ -134,13 +134,34 @@ title_year_week={{{ [<year_weeks>addprefix[-]addprefix<week_years>] }}}
     <$action-createtiddler
       $basetitle=<<title_year_week>>
       time_form="weeks"
-      tags=""
+      tags=<<week_years>>
       week_years=<<week_years>>
       week_num=<<year_weeks>>
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
      {{$:/plugins/mabuqian/time-prints/image/week}} 一周
+</$button>
+</$let>
+\end
+
+\define create-months()
+<$let
+month_years=<<now "YYYY" >>
+year_months=<<now "0MM" >>
+title_year_month={{{ [<year_months>addprefix[-]addprefix<month_years>] }}}
+>
+<$button tooltip="点击创建一月">
+    <$action-createtiddler
+      $basetitle=<<title_year_month>>
+      time_form="months"
+      tags=<<month_years>>
+      month_years=<<week_years>>
+      month_num=<<year_months>>
+     >
+     <<after-create-tiddler-without-parent>>
+     </$action-createtiddler>
+     {{$:/plugins/mabuqian/time-prints/image/month}} 一月
 </$button>
 </$let>
 \end

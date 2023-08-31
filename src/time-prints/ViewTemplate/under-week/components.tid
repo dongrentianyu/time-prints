@@ -1,11 +1,11 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-week/components
 tags: $:/tags/ViewTemplate
-list-before: $:/plugins/mabuqian/gumo-customisation/back-to-top
+list-before: $:/core/ui/ViewTemplate/body
 
 <$list filter="[<currentTiddler>time_form[weeks]!prefix[$:/]]">
 
 <details>
-  <summary>添加当前内容</summary>
+<summary>查看本周内容</summary>
 
 <<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-week]]" "$:/plugins/mabuqian/time-prints/ViewTemplate/under-week/dynmaic-data" "$:/state/tp/under-week" "tc-vertical">>
 

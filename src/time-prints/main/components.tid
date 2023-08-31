@@ -14,15 +14,19 @@ title: $:/plugins/mabuqian/time-prints/main/components
 <div class="tp-sidebar-project-list-item" >
 <<create-days>>&nbsp;&nbsp;
 <<create-weeks>>&nbsp;&nbsp;
+<<create-months>>&nbsp;&nbsp;
 </div>
 
 <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-select" mode="block"/>
 
 <$let
-week_years=<<now "YYYY" >>
+years=<<now "YYYY" >>
 year_weeks=<<now "0WW" >>
-title_year_week={{{ [<year_weeks>addprefix[-]addprefix<week_years>] }}}
+year_months=<<now "0MM" >>
+title_year_week={{{ [<year_weeks>addprefix[-]addprefix<years>] }}}
+title_year_month={{{ [<year_months>addprefix[-]addprefix<years>]  }}}
 >
 <$link to=<<now "YYYY-0MM-0DD" >> > <<now "YYYY-0MM-0DD" >> </$link>&nbsp;&nbsp;
-<$link to=<<title_year_week>> > <<title_year_week>> </$link>
+<$link to=<<title_year_week>> > <<title_year_week>> </$link>&nbsp;&nbsp;
+<$link to=<<title_year_month>> > <<title_year_month>> </$link>&nbsp;&nbsp;
 </$let>

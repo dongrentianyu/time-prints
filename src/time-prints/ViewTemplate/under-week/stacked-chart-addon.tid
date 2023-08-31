@@ -47,6 +47,10 @@ title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-week/stacked-chart/add
       "name": "生活",
       "type": "line",
       "stack": "Total",
+      "label": {
+        "show": "true",
+        "position": "top"
+      },
       "areaStyle": {},
       "emphasis": {
         "focus": "series"
@@ -57,6 +61,10 @@ title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-week/stacked-chart/add
       "name": "学习",
       "type": "line",
       "stack": "Total",
+      "label": {
+        "show": "true",
+        "position": "top"
+      },
       "areaStyle": {},
       "emphasis": {
         "focus": "series"
@@ -67,6 +75,10 @@ title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-week/stacked-chart/add
       "name": "娱乐",
       "type": "line",
       "stack": "Total",
+      "label": {
+        "show": "true",
+        "position": "top"
+      },
       "areaStyle": {},
       "emphasis": {
         "focus": "series"
@@ -77,6 +89,10 @@ title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-week/stacked-chart/add
       "name": "活动",
       "type": "line",
       "stack": "Total",
+      "label": {
+        "show": "true",
+        "position": "top"
+      },
       "areaStyle": {},
       "emphasis": {
         "focus": "series"

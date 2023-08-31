@@ -9,10 +9,17 @@ tags: $:/tags/TP/under-week
     time_week_working={{{ [tag<currentTiddler>has[time_day_working]get[time_day_working]sum[]]  }}}
     time_week_amusement={{{ [tag<currentTiddler>has[time_day_amusement]get[time_day_amusement]sum[]]  }}}
     time_week_activites={{{ [tag<currentTiddler>has[time_day_activites]get[time_day_activites]sum[]]  }}}
+    count_week_all={{{ [time_form[days]tag<currentTiddler>tagging[]] +[count[]]  }}}
+    count_week_life={{{ [time_form[days]tag<currentTiddler>tagging[]] +[time_major[生活]count[]] }}}
+    count_week_study={{{ [time_form[days]tag<currentTiddler>tagging[]] +[time_major[学习]count[]]  }}}
+    count_week_working={{{ [time_form[days]tag<currentTiddler>tagging[]] +[time_major[工作]count[]]  }}}
+    count_week_amusement={{{ [time_form[days]tag<currentTiddler>tagging[]] +[time_major[娱乐]count[]]  }}}
+    count_week_activites={{{ [time_form[days]tag<currentTiddler>tagging[]] +[time_major[活动]count[]]  }}}
 >
 
 |!类型|!生活|!学习|!工作|!娱乐|!活动|!总共|
 |!时间|<<time_week_life>>|<<time_week_study>>|<<time_week_working>>|<<time_week_amusement>>|<<time_week_activites>>|<<time_week_all>>|
+|!数量|<<count_week_life>>|<<count_week_study>>|<<count_week_working>>|<<count_week_amusement>>|<<count_week_activites>>|<<count_week_all>>|
 
 
 

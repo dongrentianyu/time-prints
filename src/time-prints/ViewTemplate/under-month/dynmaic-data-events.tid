@@ -1,0 +1,5 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-month/dynmaic-data-events
+tags: $:/tags/TP/under-month
+caption: {{$:/plugins/mabuqian/time-prints/image/month}} 一月
+
+<$macrocall $name=aggregation  filter="[time_form[days]tag<currentTiddler>tagging[]]" defaultFields={{$:/plugins/mabuqian/time-prints/Config/month-dynamic-table-events}} class="w-100" state="TP-month-dynamic-table-events-state" />

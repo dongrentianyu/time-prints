@@ -1,0 +1,44 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-month/counts
+caption: {{$:/plugins/mabuqian/time-prints/image/analyse}} 占比
+tags: $:/tags/TP/under-month
+
+<$let
+	time_month_all={{{ [tag<currentTiddler>has[time_day_all]get[time_day_all]sum[]]  }}}
+    time_month_life={{{ [tag<currentTiddler>has[time_day_life]get[time_day_life]sum[]]  }}}
+    time_month_study={{{ [tag<currentTiddler>has[time_day_study]get[time_day_study]sum[]]  }}}
+    time_month_working={{{ [tag<currentTiddler>has[time_day_working]get[time_day_working]sum[]]  }}}
+    time_month_amusement={{{ [tag<currentTiddler>has[time_day_amusement]get[time_day_amusement]sum[]]  }}}
+    time_month_activites={{{ [tag<currentTiddler>has[time_day_activites]get[time_day_activites]sum[]]  }}}
+    count_month_all={{{ [time_form[days]tag<currentTiddler>tagging[]] +[count[]]  }}}
+    count_month_life={{{ [time_form[days]tag<currentTiddler>tagging[]] +[time_major[生活]count[]] }}}
+    count_month_study={{{ [time_form[days]tag<currentTiddler>tagging[]] +[time_major[学习]count[]]  }}}
+    count_month_working={{{ [time_form[days]tag<currentTiddler>tagging[]] +[time_major[工作]count[]]  }}}
+    count_month_amusement={{{ [time_form[days]tag<currentTiddler>tagging[]] +[time_major[娱乐]count[]]  }}}
+    count_month_activites={{{ [time_form[days]tag<currentTiddler>tagging[]] +[time_major[活动]count[]]  }}}
+>
+
+|!类型|!生活|!学习|!工作|!娱乐|!活动|!总共|
+|!时间|<<time_month_life>>|<<time_month_study>>|<<time_month_working>>|<<time_month_amusement>>|<<time_month_activites>>|<<time_month_all>>|
+|!数量|<<count_month_life>>|<<count_month_study>>|<<count_month_working>>|<<count_month_amusement>>|<<count_month_activites>>|<<count_month_all>>|
+
+
+<$macrocall $name=donut-chart pct={{{ [<time_month_life>divide<time_month_all>fixed[4]multiply[100]round[]] }}}  label="生活占比" color=green/>
+<$macrocall $name=donut-chart pct={{{ [<time_month_study>divide<time_month_all>fixed[4]multiply[100]round[]] }}}  label="学习占比" color=blue/>
+<$macrocall $name=donut-chart pct={{{ [<time_weej_working>divide<time_month_all>fixed[4]multiply[100]round[]] }}}  label="工作占比" color=orange/>
+<$macrocall $name=donut-chart pct={{{ [<time_month_amusement>divide<time_month_all>fixed[4]multiply[100]round[]] }}}  label="娱乐占比" color=red/>
+<$macrocall $name=donut-chart pct={{{ [<time_month_activites>divide<time_month_all>fixed[4]multiply[100]round[]] }}}  label="活动占比" color=pink/>
+<$macrocall $name=donut-chart pct={{{ [<time_month_all>divide[10080]fixed[4]multiply[100]round[]] }}}  label="一周占比" color=brown/>
+
+<$button tooltip="一月结束后，进行赋值">
+<$action-setfield
+time_month_all=<<time_month_all>>
+time_month_life=<<time_month_life>>
+time_month_study=<<time_month_study>>
+time_month_working=<<time_month_working>>
+time_month_amusement=<<time_month_amusement>>
+time_month_activites=<<time_month_activites>>
+/>
+{{$:/plugins/mabuqian/time-prints/image/month}} 赋值
+</$button>
+
+</$let>

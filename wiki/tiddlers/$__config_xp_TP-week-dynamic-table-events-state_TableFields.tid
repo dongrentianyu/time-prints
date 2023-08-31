@@ -1,0 +1,6 @@
+created: 20230831011221967
+list: tbl-expand title time_major time_spent time_day time_specific created modified super-tag tags time_detail time_end time_form time_record time_start type
+modified: 20230831013444744
+order: tbl-expand title time_major time_spent time_day time_specific
+title: $:/config/xp/TP-week-dynamic-table-events-state/TableFields
+type: text/vnd.tiddlywiki

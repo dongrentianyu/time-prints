@@ -1,6 +1,6 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-event/components
 tags: $:/tags/ViewTemplate
-list-before: $:/plugins/mabuqian/time-prints/ViewTemplate/super-tag
+list-before: $:/core/ui/ViewTemplate/body
 
 \import  [[$:/plugins/mabuqian/time-prints/view-template/under-event/components/buttons]] [[$:/plugins/mabuqian/time-prints/main/components/buttons]] [[$:/plugins/mabuqian/time-prints/view-template/under-event/components/select-edit-specific]]
 
@@ -16,7 +16,7 @@ list-before: $:/plugins/mabuqian/time-prints/ViewTemplate/super-tag
 <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-select" mode="block"/>
 
 <details>
-  <summary>添加当前内容</summary>
+  <summary>添加本日内容</summary>
 
 <<select-edit-specific>>
 </details>
