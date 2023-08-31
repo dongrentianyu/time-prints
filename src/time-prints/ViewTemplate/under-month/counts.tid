@@ -27,7 +27,7 @@ tags: $:/tags/TP/under-month
 <$macrocall $name=donut-chart pct={{{ [<time_weej_working>divide<time_month_all>fixed[4]multiply[100]round[]] }}}  label="工作占比" color=orange/>
 <$macrocall $name=donut-chart pct={{{ [<time_month_amusement>divide<time_month_all>fixed[4]multiply[100]round[]] }}}  label="娱乐占比" color=red/>
 <$macrocall $name=donut-chart pct={{{ [<time_month_activites>divide<time_month_all>fixed[4]multiply[100]round[]] }}}  label="活动占比" color=pink/>
-<$macrocall $name=donut-chart pct={{{ [<time_month_all>divide[43200]fixed[4]multiply[100]round[]] }}}  label="一月占比" color=brown/>
+<$macrocall $name=donut-chart pct={{{ [<time_month_all>divide[44640]fixed[4]multiply[100]round[]] }}}  label="一月占比" color=brown/>
 
 <$button tooltip="一月结束后，进行赋值">
 <$action-setfield

@@ -1,0 +1,4 @@
+title: $:/tags/TP/under-event
+list: $:/plugins/mabuqian/time-prints/view-template/under-event/components/time-picker $:/plugins/mabuqian/time-prints/view-template/under-event/components/select-edit-specific
+
+use this tag to display something about events

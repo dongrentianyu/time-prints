@@ -1,0 +1,21 @@
+title: $:/plugins/mabuqian/time-prints/main/time-picker
+code-body: yes
+
+\define time-picker(field)
+\function  hour()[[$:/state/tp/time-picker]get[hour]]
+\function  minute()[[$:/state/tp/time-picker]get[minute]]
+\function  time()[<hour>addsuffix[:]addsuffix<minute>]
+
+<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/time-picker-select" mode="block"/>
+
+<$button>
+<$action-setfield $field=$field$  $value=<<time>> />
+<$action-setfield $tiddler="$:/state/tp/time-picker"  hour="" />
+<$action-setfield $tiddler="$:/state/tp/time-picker"  minute="" />
+设置时间
+</$button>
+
+\end
+
+
+<<time-picker "test" >>

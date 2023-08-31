@@ -1,4 +1,6 @@
 title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/select-edit-specific
+tags: $:/tags/TP/under-event
+caption: select-edit
 
 \define select-edit-specific()
 <style>
@@ -56,3 +58,5 @@ detail
 </div>
 </div>
 \end
+
+<<select-edit-specific>>

@@ -1,0 +1,47 @@
+created: 20230831170917909
+modified: 20230831171456592
+tags: 
+title: 新条目 5
+type: text/vnd.tiddlywiki
+
+\define time-picker()
+\function  hour()[[$:/state/time-picker]get[hour]]
+\function  minute()[[$:/state/time-picker]get[minute]]
+\function  time()[<hour>addsuffix[:]addsuffix<minute>]
+
+<$select tiddler='$:/state/time-picker' field="hour" tooltip='选择小时'>
+<option>01</option>
+<option>02</option>
+<option>03</option>
+<option>04</option>
+<option>05</option>
+<option>06</option>
+<option>07</option>
+<option>08</option>
+<option>09</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+</$select>
+
+
+<$edit-text tiddler="$:/state/time-picker" field="minute"/><p/>
+
+<<time>>
+
+\end
+
+
+<<time-picker>>

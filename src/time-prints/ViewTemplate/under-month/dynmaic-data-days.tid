@@ -9,5 +9,5 @@ class="w-100 thead-secondary table-hover-cyan"
 fields={{$:/plugins/mabuqian/time-prints/Config/month-dynamic-table-days}}
 caption=<<now "YYYY-0MM-0DD hh:0mm:0ss">>
 stateTiddler="TP-month-dynamic-table-days-state"
-footerRows="7"
+pagination="yes"
 />

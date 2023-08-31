@@ -16,8 +16,9 @@ list-before: $:/core/ui/ViewTemplate/body
 <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-select" mode="block"/>
 
 <details>
-  <summary>添加本日内容</summary>
+  <summary>添加其他内容</summary>
 
-<<select-edit-specific>>
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-event]]" "$:/plugins/mabuqian/time-prints/view-template/under-event/components/time-picker" "$:/state/tp/under-event" "tc-vertical">>
+
 </details>
 </$list>
