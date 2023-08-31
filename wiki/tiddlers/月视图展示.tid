@@ -1,10 +1,10 @@
 created: 20230831023554606
-modified: 20230831024027199
+modified: 20230831025627416
 tags: 参考与讨论
 title: 月视图展示
 type: text/vnd.tiddlywiki
 
-[[https://echarts.apache.org/examples/zh/editor.html?c=mix-timeline-finance]]
+[[mix-timeline-finance|https://echarts.apache.org/examples/zh/editor.html?c=mix-timeline-finance]]
 
 上面这个用来展示一个月的数据是很不错的。但很明显需要用代码详细调整。这就还需要花点时间处理了。
 
