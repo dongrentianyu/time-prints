@@ -1,0 +1,11 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/timeline
+caption: {{$:/plugins/mabuqian/time-prints/image/timeline}} 时记
+tags: $:/tags/TP/under-day
+
+<div style="column-count: 3;">
+<ol>
+<$list filter="[tag<currentTiddler>sort[time_start]]">
+<li> {{!!time_start}} <$link><<currentTiddler>></$link> </li>
+</$list>
+</ol>
+</div>
