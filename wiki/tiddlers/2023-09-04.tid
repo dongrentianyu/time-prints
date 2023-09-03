@@ -1,0 +1,19 @@
+created: 20230903140729484
+day_days: 04
+day_months: 09
+day_weeks: 1
+day_years: 2023
+modified: 20230903142418770
+super-tag: days
+tags: 2023-09 2023-36
+time_form: days
+title: 2023-09-04
+type: text/vnd.tiddlywiki
+year_days: 247
+year_weeks: 36
+
+ <$list filter="[tag<currentTiddler>]">
+
+!!! <$link><<currentTiddler>></$link>  {{!!time_start}}  -> {{!!time_end}} 
+
+</$list>
