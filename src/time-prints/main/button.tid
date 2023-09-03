@@ -165,3 +165,38 @@ title_year_month={{{ [<year_months>addprefix[-]addprefix<month_years>] }}}
 </$button>
 </$let>
 \end
+
+\define create-days-select()
+<$let
+select-now={{{ [[$:/state/TP/create-days-select]get[select-now]] }}}
+select-time={{{ [<select-now>search-replace:g[-],[]addsuffix[0000000]]  }}}
+day_years={{{ [<select-now>split[]first[4]join[]] }}}
+day_months={{{ [<select-now>split[]first[7]last[2]join[]] }}}
+year_weeks={{{ [<select-time>format:date[0WW]]  }}}
+tags_year_month={{{ [<day_months>addprefix[-]addprefix<day_years>] }}}
+tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
+day_days={{{ [<select-now>split[]last[2]join[]]  }}}
+day_weeks={{{ [<select-time>format:date[dddd]]  }}}
+year_days={{{ [<select-time>format:date[0ddddd]]  }}}
+>
+<$set name="tags" filter="[<tags_year_month>] [<tags_year_week>]">
+<$button tooltip="点击创建选择的一天">
+    <$action-createtiddler
+      $basetitle=<<select-now>>
+      super-tag="days"
+      time_form="days"
+      tags=<<tags>>
+      day_years=<<day_years>>
+      day_months=<<day_months>>
+      day_days=<<day_days>>
+      day_weeks=<<day_weeks>>
+      year_weeks=<<year_weeks>>
+      year_days=<<year_days>>
+     >
+     <<after-create-tiddler-without-parent>>
+     </$action-createtiddler>
+     {{$:/plugins/mabuqian/time-prints/image/day}} 一天
+</$button>
+</$set>
+</$let>
+\end
