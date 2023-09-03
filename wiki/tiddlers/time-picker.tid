@@ -1,9 +1,11 @@
 created: 20230831170917909
-modified: 20230831171456592
-tags: 
-title: 新条目 5
+modified: 20230903171817826
+tags: 代码存放
+title: time-picker
 type: text/vnd.tiddlywiki
 
+
+```
 \define time-picker()
 \function  hour()[[$:/state/time-picker]get[hour]]
 \function  minute()[[$:/state/time-picker]get[minute]]
@@ -45,3 +47,4 @@ type: text/vnd.tiddlywiki
 
 
 <<time-picker>>
+```

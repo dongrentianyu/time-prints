@@ -1,9 +1,11 @@
 created: 20230831171457521
-modified: 20230831171459560
-tags: 
-title: 新条目 6
+modified: 20230903171738602
+tags: 代码存放
+title: select-hour
 type: text/vnd.tiddlywiki
 
+
+```
 <$select tiddler='$:/state/time-picker' field="hour" tooltip='选择小时'>
 <option>01</option>
 <option>02</option>
@@ -30,3 +32,4 @@ type: text/vnd.tiddlywiki
 <option>23</option>
 <option>24</option>
 </$select>
+```

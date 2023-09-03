@@ -3,9 +3,9 @@ caption: {{$:/plugins/mabuqian/time-prints/image/timeline}} 时记
 tags: $:/tags/TP/under-day
 
 <div style="column-count: 3;">
-<ol>
 <$list filter="[tag<currentTiddler>sort[time_start]]">
-<li> {{!!time_start}} <$link><<currentTiddler>></$link> </li>
+
+{{!!time_start}}->{{!!time_end}} <$link><<currentTiddler>></$link>
+
 </$list>
-</ol>
 </div>
