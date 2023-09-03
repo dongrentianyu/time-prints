@@ -15,8 +15,10 @@ title: $:/plugins/mabuqian/time-prints/main/components
 <<create-days>>&nbsp;&nbsp;
 <<create-weeks>>&nbsp;&nbsp;
 <<create-months>>&nbsp;&nbsp;
+</div>
+<div class="tp-sidebar-project-list-item" >
 <$edit-text tiddler="$:/state/TP/create-days-select" field="select-now" type="date" />&nbsp;&nbsp;
-<<create-days-select>>
+<<create-days-select>>&nbsp;&nbsp;
 </div>
 
 <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-select" mode="block"/>
