@@ -1,5 +1,5 @@
 tags: $:/tags/Table/HeaderTemplate
-tbl-column-list: time_day_study
+tbl-column-list: time_day_study time_week_study time_month_study
 title: $:/plugins/mabuqian/time-prints/Config/header-template/study
 type: text/vnd.tiddlywiki
 

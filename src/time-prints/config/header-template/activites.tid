@@ -1,5 +1,5 @@
 tags: $:/tags/Table/HeaderTemplate
-tbl-column-list: time_day_activites
+tbl-column-list: time_day_activites time_week_activites time_month_activites
 title: $:/plugins/mabuqian/time-prints/Config/header-template/activites
 type: text/vnd.tiddlywiki
 

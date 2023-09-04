@@ -1,0 +1,57 @@
+title: $:/plugins/mabuqian/time-prints/main/display-week/pie-chart
+tags: $:/tags/TP/main/display-week
+caption: {{$:/plugins/mabuqian/time-prints/image/analyse}} 饼图
+
+\define pie-chart-week()
+option = {
+  title: {
+    text: '七周各项占比',
+    left: 'center'
+  },
+  tooltip: {
+    trigger: 'item',
+    formatter: '{b} : {c} ({d}%)'
+  },
+  legend: {
+    bottom: 10,
+    left: 'center',
+    data: ['生活', '学习', '工作', '娱乐', '活动']
+  },
+  series: [
+    {
+      type: 'pie',
+      radius: '65%',
+      center: ['50%', '50%'],
+      selectedMode: 'single',
+      data: [
+        {value: $(time_week_life)$,name: '生活',itemStyle: {color: '#28a745'}},
+        {value: $(time_week_study)$,name: '学习',itemStyle: {color: '#0e90d2'}},
+        {value: $(time_week_working)$,name: '工作',itemStyle: {color: 'orange'}},
+        {value: $(time_week_amusement)$,name: '娱乐',itemStyle: {color: 'red'}},
+        {value: $(time_week_activites)$,name: '活动',itemStyle: {color: 'pink'}}
+
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+};
+\end
+
+<$let
+	time_week_all={{{ [time_form[weeks]last[7]has[time_week_all]get[time_week_all]sum[]]  }}}
+    time_week_life={{{ [time_form[weeks]last[7]has[time_week_life]get[time_week_life]sum[]]  }}}
+    time_week_study={{{ [time_form[weeks]last[7]has[time_week_study]get[time_week_study]sum[]]  }}}
+    time_week_working={{{ [time_form[weeks]last[7]has[time_week_working]get[time_week_working]sum[]]  }}}
+    time_week_amusement={{{ [time_form[weeks]last[7]has[time_week_amusement]get[time_week_amusement]sum[]]  }}}
+    time_week_activites={{{ [time_form[weeks]last[7]has[time_week_activites]get[time_week_activites]sum[]]  }}}
+>
+
+<$echarts $text=<<pie-chart-week>> />
+
+</$let>

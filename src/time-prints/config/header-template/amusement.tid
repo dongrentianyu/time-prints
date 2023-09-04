@@ -1,5 +1,5 @@
 tags: $:/tags/Table/HeaderTemplate
-tbl-column-list: time_day_amusement
+tbl-column-list: time_day_amusement time_week_amusement time_month_amusement
 title: $:/plugins/mabuqian/time-prints/Config/header-template/amusement
 type: text/vnd.tiddlywiki
 

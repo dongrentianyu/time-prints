@@ -1,0 +1,5 @@
+title: $:/plugins/mabuqian/time-prints/main/display-week/stacked-chart
+caption: {{$:/plugins/mabuqian/time-prints/image/stacked-bar-chart}} 堆叠
+tags: $:/tags/TP/main/display-week
+
+<$echarts $tiddler="$:/plugins/mabuqian/time-prints/main/display-week/stacked-chart/addon" $height="500px"/>

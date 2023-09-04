@@ -1,5 +1,5 @@
 tags: $:/tags/Table/HeaderTemplate
-tbl-column-list: time_day_all
+tbl-column-list: time_day_all time_week_all time_month_all
 title: $:/plugins/mabuqian/time-prints/Config/header-template/time_day_all
 type: text/vnd.tiddlywiki
 

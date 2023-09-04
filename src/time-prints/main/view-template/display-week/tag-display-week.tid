@@ -1,3 +1,4 @@
 title: $:/tags/TP/main/display-week
+list: $:/plugins/mabuqian/time-prints/main/display-week/counts $:/plugins/mabuqian/time-prints/main/display-week/dynmaic-data-weeks $:/plugins/mabuqian/time-prints/main/display-week/pie-chart $:/plugins/mabuqian/time-prints/main/display-week/stacked-chart $:/plugins/mabuqian/time-prints/main/display-week/dynmaic-data-events
 
 use this tag to display week in main
