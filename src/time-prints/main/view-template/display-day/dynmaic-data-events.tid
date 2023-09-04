@@ -1,0 +1,9 @@
+title: $:/plugins/mabuqian/time-prints/main/display-day/dynmaic-data-events
+tags: $:/tags/TP/main/display-day
+caption: {{$:/plugins/mabuqian/time-prints/image/week}} 七天
+
+<$macrocall 
+$name=aggregation 
+filter="[time_form[days]last[7]tagging[]]" 
+defaultFields={{$:/plugins/mabuqian/time-prints/Config/display-day-dynamic-table-events}} class="w-100" 
+state="TP-display-day-dynamic-table-events-state" />

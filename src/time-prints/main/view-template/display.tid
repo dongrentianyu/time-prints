@@ -1,0 +1,5 @@
+title: $:/plugins/mabuqian/time-prints/main/display
+
+<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/display-day/components" mode="block"/>
+
+<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/display-week/components" mode="block"/>

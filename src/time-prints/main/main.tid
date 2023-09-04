@@ -5,4 +5,6 @@ list-after: $:/core/ui/SideBar/Recent
 tags: $:/tags/SideBar
 type: text/vnd.tiddlywiki
 
-{{$:/plugins/mabuqian/time-prints/main/components}}
+<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/components" mode="block"/>
+
+<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/display" mode="block"/>

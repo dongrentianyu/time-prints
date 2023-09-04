@@ -1,0 +1,32 @@
+title: $:/plugins/mabuqian/time-prints/main/display-day/counts
+tags: $:/tags/TP/main/display-day
+caption: {{$:/plugins/mabuqian/time-prints/image/analyse}} 占比
+
+<$let
+	time_week_all={{{ [time_form[days]last[7]has[time_day_all]get[time_day_all]sum[]]  }}}
+    time_week_life={{{ [time_form[days]last[7]has[time_day_life]get[time_day_life]sum[]]  }}}
+    time_week_study={{{ [time_form[days]last[7]has[time_day_study]get[time_day_study]sum[]]  }}}
+    time_week_working={{{ [time_form[days]last[7]has[time_day_working]get[time_day_working]sum[]]  }}}
+    time_week_amusement={{{ [time_form[days]last[7]has[time_day_amusement]get[time_day_amusement]sum[]]  }}}
+    time_week_activites={{{ [time_form[days]last[7]has[time_day_activites]get[time_day_activites]sum[]]  }}}
+    count_week_all={{{ [time_form[days]last[7]tagging[]] +[count[]]  }}}
+    count_week_life={{{ [time_form[days]last[7]tagging[]] +[time_major[生活]count[]] }}}
+    count_week_study={{{ [time_form[days]last[7]tagging[]] +[time_major[学习]count[]]  }}}
+    count_week_working={{{ [time_form[days]last[7]tagging[]] +[time_major[工作]count[]]  }}}
+    count_week_amusement={{{ [time_form[days]last[7]tagging[]] +[time_major[娱乐]count[]]  }}}
+    count_week_activites={{{ [time_form[days]last[7]tagging[]] +[time_major[活动]count[]]  }}}
+>
+
+|!类型|!生活|!学习|!工作|!娱乐|!活动|!总共|
+|!时间|<<time_week_life>>|<<time_week_study>>|<<time_week_working>>|<<time_week_amusement>>|<<time_week_activites>>|<<time_week_all>>|
+|!数量|<<count_week_life>>|<<count_week_study>>|<<count_week_working>>|<<count_week_amusement>>|<<count_week_activites>>|<<count_week_all>>|
+
+
+<$macrocall $name=donut-chart pct={{{ [<time_week_life>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="生活占比" color=green/>
+<$macrocall $name=donut-chart pct={{{ [<time_week_study>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="学习占比" color=blue/>
+<$macrocall $name=donut-chart pct={{{ [<time_weej_working>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="工作占比" color=orange/>
+<$macrocall $name=donut-chart pct={{{ [<time_week_amusement>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="娱乐占比" color=red/>
+<$macrocall $name=donut-chart pct={{{ [<time_week_activites>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="活动占比" color=pink/>
+<$macrocall $name=donut-chart pct={{{ [<time_week_all>divide[10080]fixed[4]multiply[100]round[]] }}}  label="七天占比" color=brown/>
+
+</$let>

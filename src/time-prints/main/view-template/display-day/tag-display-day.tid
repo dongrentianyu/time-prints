@@ -1,0 +1,4 @@
+title: $:/tags/TP/main/display-day
+list: $:/plugins/mabuqian/time-prints/main/display-day/counts $:/plugins/mabuqian/time-prints/main/display-day/dynmaic-data-days $:/plugins/mabuqian/time-prints/main/display-day/pie-chart $:/plugins/mabuqian/time-prints/main/display-day/stacked-chart $:/plugins/mabuqian/time-prints/main/display-day/dynmaic-data-events
+
+use this tag to display day in main

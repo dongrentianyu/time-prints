@@ -3,15 +3,15 @@ day_days: 04
 day_months: 09
 day_weeks: 1
 day_years: 2023
-modified: 20230903142418770
+modified: 20230904072410293
 super-tag: days
 tags: 2023-09 2023-36
-time_day_activites: 
-time_day_all: 
-time_day_amusement: 
-time_day_life: 
-time_day_study: 
-time_day_working: 
+time_day_activites: 0
+time_day_all: 1438
+time_day_amusement: 0
+time_day_life: 1438
+time_day_study: 0
+time_day_working: 0
 time_form: days
 title: 2023-09-04
 type: text/vnd.tiddlywiki

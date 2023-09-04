@@ -1,0 +1,11 @@
+title: $:/plugins/mabuqian/time-prints/main/display-week/list
+tags: $:/tags/TP/main/display-week
+caption: {{$:/plugins/mabuqian/time-prints/image/list-details}} 列出
+
+<div style="column-count: 3;">
+<$list filter="[time_form[weeks]limit[7]]">
+
+!!! <$link><<currentTiddler>></$link>
+
+</$list>
+</div>

@@ -1,0 +1,12 @@
+title: $:/plugins/mabuqian/time-prints/main/display-day/dynmaic-data-days
+tags: $:/tags/TP/main/display-day
+caption: {{$:/plugins/mabuqian/time-prints/image/list-details}} 统计
+
+<$macrocall 
+$name=table-dynamic
+filter="[time_form[days]last[7]has[day_weeks]sort[day_weeks]]"
+class="w-100 thead-secondary table-hover-cyan"
+fields={{$:/plugins/mabuqian/time-prints/Config/display-day-dynamic-table-days}}
+caption=<<now "YYYY-0MM-0DD hh:0mm:0ss">>
+stateTiddler="TP-display-day-dynamic-table-days-state"
+/>
