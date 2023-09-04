@@ -1,0 +1,12 @@
+[
+    {
+        "created": "20230904113440421",
+        "text": "",
+        "title": "$:/TraitTag/Month",
+        "modified": "20230904114204519",
+        "tags": "$:/SuperTag/TraitTag",
+        "type": "text/vnd.tiddlywiki",
+        "wl-field-name-text": "schema",
+        "schema": "{\n  \"type\": \"object\",\n  \"title\": \"title\",\n  \"properties\": {\n    \"super-tag\": {\n      \"type\": \"string\",\n      \"title\": \"super-tag\",\n      \"description\": \"超级标签\"\n    },\n    \"month_num\": {\n      \"type\": \"string\",\n      \"title\": \"month_num\",\n      \"description\": \"月数\"\n    },\n    \"time_form\": {\n      \"type\": \"string\",\n      \"title\": \"time_form\",\n      \"description\": \"时间类型\"\n    },\n    \"time_month_activites\": {\n      \"type\": \"string\",\n      \"title\": \"time_month_activites\",\n      \"description\": \"一月活动总共\"\n    },\n    \"time_month_amusement\": {\n      \"type\": \"string\",\n      \"title\": \"time_month_amusement\",\n      \"description\": \"一月娱乐总共\"\n    },\n    \"time_month_life\": {\n      \"type\": \"string\",\n      \"title\": \"time_month_life\",\n      \"description\": \"一月生活总共\"\n    },\n    \"time_month_study\": {\n      \"type\": \"string\",\n      \"title\": \"time_month_study\",\n      \"description\": \"一月学习总共\"\n    },\n    \"time_month_working\": {\n      \"type\": \"string\",\n      \"title\": \"time_month_working\",\n      \"description\": \"一月工作总共\"\n    },\n    \"time_month_all\": {\n      \"type\": \"string\",\n      \"title\": \"time_month_all\",\n      \"description\": \"一月总共\"\n    }\n  },\n  \"required\": [\n    \"super-tag\",\n    \"month_num\",\n    \"time_form\",\n    \"time_month_activites\",\n    \"time_month_amusement\",\n    \"time_month_life\",\n    \"time_month_study\",\n    \"time_month_working\",\n    \"time_month_all\"\n  ]\n}"
+    }
+]

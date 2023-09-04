@@ -39,7 +39,7 @@ time_week_working=<<time_week_working>>
 time_week_amusement=<<time_week_amusement>>
 time_week_activites=<<time_week_activites>>
 />
-{{$:/plugins/mabuqian/time-prints/image/week}} 赋值
+{{$:/plugins/mabuqian/time-prints/image/week}} 赋值 {{!!time_week_all}}
 </$button>
 
 </$let>

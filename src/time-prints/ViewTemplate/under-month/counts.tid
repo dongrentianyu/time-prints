@@ -38,7 +38,7 @@ time_month_working=<<time_month_working>>
 time_month_amusement=<<time_month_amusement>>
 time_month_activites=<<time_month_activites>>
 />
-{{$:/plugins/mabuqian/time-prints/image/month}} 赋值
+{{$:/plugins/mabuqian/time-prints/image/month}} 赋值 {{!!time_month_all}}
 </$button>
 
 </$let>
