@@ -134,6 +134,7 @@ title_year_week={{{ [<year_weeks>addprefix[-]addprefix<week_years>] }}}
     <$action-createtiddler
       $basetitle=<<title_year_week>>
       time_form="weeks"
+      super-tag="weeks"
       tags=<<week_years>>
       week_years=<<week_years>>
       week_num=<<year_weeks>>
@@ -155,6 +156,7 @@ title_year_month={{{ [<year_months>addprefix[-]addprefix<month_years>] }}}
     <$action-createtiddler
       $basetitle=<<title_year_month>>
       time_form="months"
+      super-tag="months"
       tags=<<month_years>>
       month_years=<<week_years>>
       month_num=<<year_months>>

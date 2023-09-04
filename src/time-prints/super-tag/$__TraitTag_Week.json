@@ -1,0 +1,12 @@
+[
+    {
+        "created": "20230904111636478",
+        "text": "",
+        "tags": "$:/SuperTag/TraitTag",
+        "title": "$:/TraitTag/Week",
+        "modified": "20230904112342775",
+        "type": "text/vnd.tiddlywiki",
+        "wl-field-name-text": "schema",
+        "schema": "{\n  \"type\": \"object\",\n  \"title\": \"title\",\n  \"properties\": {\n    \"super-tag\": {\n      \"type\": \"string\",\n      \"title\": \"super-tag\",\n      \"description\": \"超级标签\"\n    },\n    \"time_form\": {\n      \"type\": \"string\",\n      \"title\": \"time_form\",\n      \"description\": \"时间类型\"\n    },\n    \"time_week_activites\": {\n      \"type\": \"string\",\n      \"title\": \"time_week_activites\",\n      \"description\": \"一周活动总共\"\n    },\n    \"time_week_all\": {\n      \"type\": \"string\",\n      \"title\": \"time_week_all\",\n      \"description\": \"一周总共\"\n    },\n    \"time_week_amusement\": {\n      \"type\": \"string\",\n      \"title\": \"time_week_amusement\",\n      \"description\": \"一周娱乐总共\"\n    },\n    \"time_week_life\": {\n      \"type\": \"string\",\n      \"title\": \"time_week_life\",\n      \"description\": \"一周生活总共\"\n    },\n    \"time_week_study\": {\n      \"type\": \"string\",\n      \"title\": \"time_week_study\",\n      \"description\": \"一周学习总共\"\n    },\n    \"time_week_working\": {\n      \"type\": \"string\",\n      \"title\": \"time_week_working\",\n      \"description\": \"一周工作总共\"\n    },\n    \"week_num\": {\n      \"type\": \"string\",\n      \"title\": \"week_num\",\n      \"description\": \"周期数\"\n    },\n    \"week_years\": {\n      \"type\": \"string\",\n      \"title\": \"week_years\",\n      \"description\": \"本周年数\"\n    }\n  },\n  \"required\": [\n    \"super-tag\",\n    \"time_form\",\n    \"time_week_activites\",\n    \"time_week_all\",\n    \"time_week_amusement\",\n    \"time_week_life\",\n    \"time_week_study\",\n    \"time_week_working\",\n    \"week_num\",\n    \"week_years\"\n  ]\n}"
+    }
+]
