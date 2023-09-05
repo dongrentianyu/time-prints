@@ -5,7 +5,7 @@ tags: $:/tags/TP/under-day
 <div style="column-count: 3;">
 <$list filter="[tag<currentTiddler>sort[time_start]]">
 
-{{!!time_start}}->{{!!time_end}} <$link><<currentTiddler>></$link>
+<$transclude $tiddler=<<currentTiddler>> $field="time_start"/>-><$transclude $tiddler=<<currentTiddler>> $field="time_end"/>&nbsp;&nbsp;<$link><<currentTiddler>></$link>&nbsp;&nbsp;<$transclude $tiddler=<<currentTiddler>> $field="time_spent"/>
 
 </$list>
 </div>
