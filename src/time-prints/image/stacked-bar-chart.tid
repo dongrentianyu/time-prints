@@ -9,4 +9,4 @@ type: text/vnd.tiddlywiki
 
 <!-- copy form https://morosanuae.github.io/tw-icons/ 
 name $:/images/google-material-design/content/filled/24px/stacked-bar-chart -->
-<svg width="22pt" height="22pt" class="tc-image-gmd-stacked-bar-chart tc-image-button" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 10h3v10H6zm0-5h3v4H6zm10 11h3v4h-3zm0-3h3v2h-3zm-5 0h3v7h-3zm0-4h3v3h-3z"/></svg>
+<svg width="22pt" height="22pt" class="tc-image-gmd-stacked-bar-chart tc-image-button" viewBox="0 0 24 24" width="24"><path fill="#000000" d="M0 0h24v24H0z" fill="none"/><path d="M6 10h3v10H6zm0-5h3v4H6zm10 11h3v4h-3zm0-3h3v2h-3zm-5 0h3v7h-3zm0-4h3v3h-3z"/></svg>
