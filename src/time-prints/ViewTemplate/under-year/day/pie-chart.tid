@@ -1,0 +1,57 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-year/day/pie-chart
+tags: $:/tags/TP/under-year
+caption: {{$:/plugins/mabuqian/time-prints/image/analyse}} 饼图
+
+\define pie-chart-week()
+option = {
+  title: {
+    text: '一年各项占比',
+    left: 'center'
+  },
+  tooltip: {
+    trigger: 'item',
+    formatter: '{b} : {c} ({d}%)'
+  },
+  legend: {
+    bottom: 10,
+    left: 'center',
+    data: ['生活', '学习', '工作', '娱乐', '活动']
+  },
+  series: [
+    {
+      type: 'pie',
+      radius: '65%',
+      center: ['50%', '50%'],
+      selectedMode: 'single',
+      data: [
+        {value: $(time_week_life)$,name: '生活',itemStyle: {color: '#28a745'}},
+        {value: $(time_week_study)$,name: '学习',itemStyle: {color: '#0e90d2'}},
+        {value: $(time_week_working)$,name: '工作',itemStyle: {color: 'orange'}},
+        {value: $(time_week_amusement)$,name: '娱乐',itemStyle: {color: 'red'}},
+        {value: $(time_week_activites)$,name: '活动',itemStyle: {color: 'pink'}}
+
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+};
+\end
+
+<$let
+	  time_week_all={{{ [day_years<currentTiddler>has[time_day_all]get[time_day_all]sum[]]  }}}
+    time_week_life={{{ [day_years<currentTiddler>has[time_day_life]get[time_day_life]sum[]]  }}}
+    time_week_study={{{ [day_years<currentTiddler>has[time_day_study]get[time_day_study]sum[]]  }}}
+    time_week_working={{{ [day_years<currentTiddler>has[time_day_working]get[time_day_working]sum[]]  }}}
+    time_week_amusement={{{ [day_years<currentTiddler>has[time_day_amusement]get[time_day_amusement]sum[]]  }}}
+    time_week_activites={{{ [day_years<currentTiddler>has[time_day_activites]get[time_day_activites]sum[]]  }}}
+>
+
+<$echarts $text=<<pie-chart-week>> />
+
+</$let>

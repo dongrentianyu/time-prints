@@ -15,6 +15,7 @@ title: $:/plugins/mabuqian/time-prints/main/components
 <<create-days>>&nbsp;&nbsp;
 <<create-weeks>>&nbsp;&nbsp;
 <<create-months>>&nbsp;&nbsp;
+<<create-years>>&nbsp;&nbsp;
 </div>
 <div class="tp-sidebar-project-list-item" >
 <$edit-text tiddler="$:/state/TP/create-days-select" field="select-now" type="date" />&nbsp;&nbsp;
@@ -33,4 +34,5 @@ title_year_month={{{ [<year_months>addprefix[-]addprefix<years>]  }}}
 <$link to=<<now "YYYY-0MM-0DD" >> > <<now "YYYY-0MM-0DD" >> </$link>&nbsp;&nbsp;
 <$link to=<<title_year_week>> > <<title_year_week>> </$link>&nbsp;&nbsp;
 <$link to=<<title_year_month>> > <<title_year_month>> </$link>&nbsp;&nbsp;
+<$link to=<<years>> > <<years>> </$link>&nbsp;&nbsp;
 </$let>

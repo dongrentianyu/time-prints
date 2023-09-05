@@ -1,0 +1,5 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-year/month/stacked-chart
+caption: {{$:/plugins/mabuqian/time-prints/image/stacked-bar-chart}} 堆叠
+tags: $:/tags/TP/under-year
+
+<$echarts $tiddler="$:/plugins/mabuqian/time-prints/ViewTemplate/under-year/month/stacked-chart/addon" currentTiddler=<<currentTiddler>> $height="500px"/>

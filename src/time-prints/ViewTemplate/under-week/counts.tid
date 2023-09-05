@@ -25,7 +25,7 @@ tags: $:/tags/TP/under-week
 
 <$macrocall $name=donut-chart pct={{{ [<time_week_life>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="生活占比" color=green/>
 <$macrocall $name=donut-chart pct={{{ [<time_week_study>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="学习占比" color=blue/>
-<$macrocall $name=donut-chart pct={{{ [<time_weej_working>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="工作占比" color=orange/>
+<$macrocall $name=donut-chart pct={{{ [<time_week_working>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="工作占比" color=orange/>
 <$macrocall $name=donut-chart pct={{{ [<time_week_amusement>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="娱乐占比" color=red/>
 <$macrocall $name=donut-chart pct={{{ [<time_week_activites>divide<time_week_all>fixed[4]multiply[100]round[]] }}}  label="活动占比" color=pink/>
 <$macrocall $name=donut-chart pct={{{ [<time_week_all>divide[10080]fixed[4]multiply[100]round[]] }}}  label="一周占比" color=brown/>

@@ -1,0 +1,12 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-year/month/dynmaic-data-months
+tags: $:/tags/TP/under-year
+caption: {{$:/plugins/mabuqian/time-prints/image/list-details}} 月计
+
+<$macrocall 
+$name=table-dynamic
+filter="[tag<currentTiddler>time_form[months]has[month_num]sort[month_num]]"
+class="w-100 thead-secondary table-hover-cyan"
+fields={{$:/plugins/mabuqian/time-prints/Config/year-month-dynamic-table-months}}
+caption=<<now "YYYY-0MM-0DD hh:0mm:0ss">>
+stateTiddler="TP-year-month-dynamic-table-months-state"
+/>

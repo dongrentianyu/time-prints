@@ -1,0 +1,12 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-year/week/dynmaic-data-weeks
+tags: $:/tags/TP/under-year
+caption: {{$:/plugins/mabuqian/time-prints/image/list-details}} 周计
+
+<$macrocall 
+$name=table-dynamic
+filter="[tag<currentTiddler>time_form[weeks]has[week_num]sort[week_num]]"
+class="w-100 thead-secondary table-hover-cyan"
+fields={{$:/plugins/mabuqian/time-prints/Config/year-week-dynamic-table-weeks}}
+caption=<<now "YYYY-0MM-0DD hh:0mm:0ss">>
+stateTiddler="TP-year-week-dynamic-table-weeks-state"
+/>

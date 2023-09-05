@@ -202,3 +202,22 @@ year_days={{{ [<select-time>format:date[0ddddd]]  }}}
 </$set>
 </$let>
 \end
+
+\define create-years()
+<$let
+years=<<now "YYYY" >>
+>
+<$button tooltip="点击创建一年">
+    <$action-createtiddler
+      $basetitle=<<years>>
+      time_form="years"
+      super-tag="years"
+      tags="TIME"
+      years=<<years>>
+     >
+     <<after-create-tiddler-without-parent>>
+     </$action-createtiddler>
+     {{$:/plugins/mabuqian/time-prints/image/year}} 一年
+</$button>
+</$let>
+\end

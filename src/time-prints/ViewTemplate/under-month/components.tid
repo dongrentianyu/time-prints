@@ -7,7 +7,7 @@ list-before: $:/core/ui/ViewTemplate/body
 <details>
 <summary>查看本月内容</summary>
 
-<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-month]]" "$:/plugins/mabuqian/time-prints/ViewTemplate/under-week/dynmaic-data" "$:/state/tp/under-month" "tc-vertical">>
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-month]]" "$:/plugins/mabuqian/time-prints/ViewTemplate/under-month/counts" "$:/state/tp/under-month" >>
 
 </details>
 </$list>

@@ -6,8 +6,13 @@ list-before: $:/core/ui/ViewTemplate/body
 
 <$list filter="[<currentTiddler>time_form[events]!prefix[$:/]]">
 <div class="tp-sidebar-project-list-item" >
+<$list filter="[<currentTiddler>tags[]tagging[]] +[has[time_end]sort[time_end]last[1]]">
+最后一件事：&nbsp;<$link><<currentTiddler>></$link>&nbsp;&nbsp;{{!!time_end}}&nbsp;&nbsp;
+</$list>
 <<set-time-end>>&nbsp;&nbsp;
 <<set-time-start-end>>&nbsp;&nbsp;
+</div>
+<div class="tp-sidebar-project-list-item" >
 <<create-events-under-event>>&nbsp;&nbsp;
 <<create-events-specific-under-event>>&nbsp;&nbsp;
 <<create-events-detail-under-event>>&nbsp;&nbsp;
@@ -18,7 +23,7 @@ list-before: $:/core/ui/ViewTemplate/body
 <details>
   <summary>添加其他内容</summary>
 
-<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-event]]" "$:/plugins/mabuqian/time-prints/view-template/under-event/components/time-picker" "$:/state/tp/under-event" "tc-vertical">>
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-event]]" "$:/plugins/mabuqian/time-prints/view-template/under-event/components/time-picker" "$:/state/tp/under-event" >>
 
 </details>
 </$list>

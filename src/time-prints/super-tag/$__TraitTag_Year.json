@@ -1,0 +1,12 @@
+[
+    {
+        "created": "20230905124226246",
+        "text": "",
+        "tags": "$:/SuperTag/TraitTag",
+        "title": "$:/TraitTag/Year",
+        "modified": "20230905125012543",
+        "type": "text/vnd.tiddlywiki",
+        "wl-field-name-text": "schema",
+        "schema": "{\n  \"type\": \"object\",\n  \"title\": \"title\",\n  \"properties\": {\n    \"super-tag\": {\n      \"type\": \"string\",\n      \"title\": \"super-tag\",\n      \"description\": \"超级标签\"\n    },\n    \"time_form\": {\n      \"type\": \"string\",\n      \"title\": \"time_form\",\n      \"description\": \"时间类型\"\n    },\n    \"years\": {\n      \"type\": \"string\",\n      \"title\": \"years\",\n      \"description\": \"年数\"\n    },\n    \"time_year_all\": {\n      \"type\": \"string\",\n      \"title\": \"time_year_all\",\n      \"description\": \"一年总共\"\n    },\n    \"time_year_life\": {\n      \"type\": \"string\",\n      \"title\": \"time_year_life\",\n      \"description\": \"一年生活总共\"\n    },\n    \"time_year_study\": {\n      \"type\": \"string\",\n      \"title\": \"time_year_study\",\n      \"description\": \"一年学习总共\"\n    },\n    \"time_year_working\": {\n      \"type\": \"string\",\n      \"title\": \"time_year_working\",\n      \"description\": \"一年工作总共\"\n    },\n    \"time_year_amusement\": {\n      \"type\": \"string\",\n      \"title\": \"time_year_amusement\",\n      \"description\": \"一年娱乐总共\"\n    },\n    \"time_year_activites\": {\n      \"type\": \"string\",\n      \"title\": \"time_year_activites\",\n      \"description\": \"一年活动总共\"\n    }\n  },\n  \"required\": [\n    \"super-tag\",\n    \"time_form\",\n    \"years\",\n    \"time_year_all\",\n    \"time_year_life\",\n    \"time_year_study\",\n    \"time_year_working\",\n    \"time_year_amusement\",\n    \"time_year_activites\"\n  ]\n}"
+    }
+]

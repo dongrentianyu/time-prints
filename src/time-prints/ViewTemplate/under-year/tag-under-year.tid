@@ -1,0 +1,4 @@
+title: $:/tags/TP/under-year
+list: $:/plugins/mabuqian/time-prints/ViewTemplate/under-year/day/counts $:/plugins/mabuqian/time-prints/ViewTemplate/under-year/day/pie-chart $:/plugins/mabuqian/time-prints/ViewTemplate/under-year/month/dynmaic-data-months $:/plugins/mabuqian/time-prints/ViewTemplate/under-year/month/stacked-chart $:/plugins/mabuqian/time-prints/ViewTemplate/under-year/week/dynmaic-data-weeks
+
+use this tags to display weeks in the year

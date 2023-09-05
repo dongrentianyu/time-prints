@@ -7,7 +7,7 @@ list-before: $:/core/ui/ViewTemplate/body
 <details>
 <summary>查看本周内容</summary>
 
-<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-week]]" "$:/plugins/mabuqian/time-prints/ViewTemplate/under-week/counts" "$:/state/tp/under-week" "tc-vertical">>
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-week]]" "$:/plugins/mabuqian/time-prints/ViewTemplate/under-week/counts" "$:/state/tp/under-week">>
 
 </details>
 </$list>

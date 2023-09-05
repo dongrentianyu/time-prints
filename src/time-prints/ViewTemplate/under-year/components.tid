@@ -1,0 +1,14 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-year/components
+tags: $:/tags/ViewTemplate
+list-before: $:/core/ui/ViewTemplate/body
+
+<$list filter="[<currentTiddler>time_form[years]!prefix[$:/]]">
+
+<details>
+<summary>查看一年统计内容</summary>
+
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-year]]" "$:/plugins/mabuqian/time-prints/ViewTemplate/under-year/day/counts" "$:/state/tp/under-year">>
+
+</details>
+
+</$list>
