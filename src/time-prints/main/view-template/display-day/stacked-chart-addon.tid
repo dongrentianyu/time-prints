@@ -32,7 +32,7 @@ title: $:/plugins/mabuqian/time-prints/main/display-day/stacked-chart/addon
       "type": "category",
       "boundaryGap": "false",
       "data": [
-        <$list filter="[time_form[days]last[7]]">'{{!!title}}', </$list>
+        <$list filter="[time_form[days]sort[time_form]last[7]]">'{{!!title}}', </$list>
         ]
     }
   ],
@@ -54,7 +54,7 @@ title: $:/plugins/mabuqian/time-prints/main/display-day/stacked-chart/addon
       "emphasis": {
         "focus": "series"
       },
-      "data": [<$list filter="[time_form[days]last[7]]">'{{!!time_day_life}}', </$list>]
+      "data": [<$list filter="[time_form[days]sort[time_form]last[7]]">'{{!!time_day_life}}', </$list>]
     },
     {
       "name": "学习",
@@ -68,7 +68,7 @@ title: $:/plugins/mabuqian/time-prints/main/display-day/stacked-chart/addon
       "emphasis": {
         "focus": "series"
       },
-      "data": [<$list filter="[time_form[days]last[7]]">'{{!!time_day_study}}', </$list>]
+      "data": [<$list filter="[time_form[days]sort[time_form]last[7]]">'{{!!time_day_study}}', </$list>]
     },
     {
       "name": "娱乐",
@@ -82,7 +82,7 @@ title: $:/plugins/mabuqian/time-prints/main/display-day/stacked-chart/addon
       "emphasis": {
         "focus": "series"
       },
-      "data": [<$list filter="[time_form[days]last[7]]">'{{!!time_day_amusement}}', </$list>]
+      "data": [<$list filter="[time_form[days]sort[time_form]last[7]]">'{{!!time_day_amusement}}', </$list>]
     },
     {
       "name": "活动",
@@ -96,7 +96,7 @@ title: $:/plugins/mabuqian/time-prints/main/display-day/stacked-chart/addon
       "emphasis": {
         "focus": "series"
       },
-      "data": [<$list filter="[time_form[days]last[7]]">'{{!!time_day_activites}}', </$list>]
+      "data": [<$list filter="[time_form[days]sort[time_form]last[7]]">'{{!!time_day_activites}}', </$list>]
     },
     {
       "name": "工作",
@@ -110,7 +110,7 @@ title: $:/plugins/mabuqian/time-prints/main/display-day/stacked-chart/addon
       "emphasis": {
         "focus": "series"
       },
-      "data": [<$list filter="[time_form[days]last[7]]">'{{!!time_day_working}}', </$list>]
+      "data": [<$list filter="[time_form[days]sort[time_form]last[7]]">'{{!!time_day_working}}', </$list>]
     }
   ]
 }
