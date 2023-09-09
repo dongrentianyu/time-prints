@@ -3,7 +3,10 @@ caption: {{$:/plugins/mabuqian/time-prints/image/time-spare}} 剩余
 tags: $:/tags/TP/under-day
 
 <$let
- time_day_all={{{ [tag<currentTiddler>has[time_spent]get[time_spent]sum[]]  }}}
+ time-spare-now={{{ [tag<currentTiddler>has[time_spent]sort[time_end]last[1]get[time_end]]  }}}
+ time-spare-hour={{{ [<time-spare-now>first[2]multiply[60]]  }}}
+ time-spare-minute={{{ [<time-spare-now>split[]last[2]join[]] }}}
+ time_day_all={{{ [<time-spare-hour>add<time-spare-minute>]  }}}
  now_hour=<<now "0hh" >>
  now_mm=<<now "0mm" >>
  now_time={{{ [<now_hour>multiply[60]add<now_mm>]  }}}
