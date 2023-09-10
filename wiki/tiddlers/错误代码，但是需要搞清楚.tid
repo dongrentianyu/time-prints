@@ -73,6 +73,6 @@ time_day_working=<<time_day_working>>
 time_day_amusement=<<time_day_amusement>>
 time_day_activites=<<time_day_activites>>
 />
-{{$:/plugins/mabuqian/time-prints/image/day}} 赋值
+<<doc-svg "$:/plugins/mabuqian/time-prints/image/day" "#2d2e36">> 赋值
 </$button>
 ```

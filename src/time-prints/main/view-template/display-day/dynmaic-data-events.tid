@@ -1,6 +1,6 @@
 title: $:/plugins/mabuqian/time-prints/main/display-day/dynmaic-data-events
 tags: $:/tags/TP/main/display-day
-caption: {{$:/plugins/mabuqian/time-prints/image/week}} 七天
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/week" "#2d2e36">> 七天
 
 <$macrocall 
 $name=aggregation 

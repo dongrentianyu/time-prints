@@ -1,5 +1,5 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/time-spare
-caption: {{$:/plugins/mabuqian/time-prints/image/time-spare}} 剩余
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/time-spare" "#2d2e36">> 剩余
 tags: $:/tags/TP/under-day
 
 <$let

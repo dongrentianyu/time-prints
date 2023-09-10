@@ -16,7 +16,7 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-day/components/button
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/event}} specific
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> specific
 </$button>
 \end
 
@@ -37,6 +37,6 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-day/components/button
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/event}} detail
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> detail
 </$button>
 \end

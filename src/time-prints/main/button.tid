@@ -16,7 +16,7 @@ code-body: yes
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/event}} 事件
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> 事件
 </$button>
 \end
 
@@ -56,7 +56,7 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/day}} 一天
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/day" "#2d2e36">> 一天
 </$button>
 </$set>
 </$let>
@@ -78,7 +78,7 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/event}} 事件 <<time-end>>
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> 事件 <<time-end>>
 </$button>
 </$let>
 \end
@@ -99,7 +99,7 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/event}} specific
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> specific
 </$button>
 \end
 
@@ -120,7 +120,7 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/event}} detail
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> detail
 </$button>
 \end
 
@@ -141,7 +141,7 @@ title_year_week={{{ [<year_weeks>addprefix[-]addprefix<week_years>] }}}
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/week}} 一周
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/week" "#2d2e36">> 一周
 </$button>
 </$let>
 \end
@@ -163,7 +163,7 @@ title_year_month={{{ [<year_months>addprefix[-]addprefix<month_years>] }}}
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/month}} 一月
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/month" "#2d2e36">> 一月
 </$button>
 </$let>
 \end
@@ -197,7 +197,7 @@ year_days={{{ [<select-time>format:date[0ddddd]]  }}}
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/day}} 一天
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/day" "#2d2e36">> 一天
 </$button>
 </$set>
 </$let>

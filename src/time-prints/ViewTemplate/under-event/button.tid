@@ -3,7 +3,7 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/butt
 \define set-time-end()
 <$button tooltip="确定当前时刻结束时刻">
 <$action-setfield time_end=<<now "0hh:0mm" >>/>
-{{$:/plugins/mabuqian/time-prints/image/event}} 结束时刻
+<<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> 结束时刻
 </$button>
 \end
 
@@ -41,7 +41,7 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/butt
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/event}} 事件
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> 事件
 </$button>
 \end
 
@@ -61,7 +61,7 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/butt
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/event}} specific
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> specific
 </$button>
 \end
 
@@ -82,6 +82,6 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/butt
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/event}} detail
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> detail
 </$button>
 \end

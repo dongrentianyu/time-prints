@@ -1,5 +1,5 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/datails
-caption: {{$:/plugins/mabuqian/time-prints/image/list-details}} 列出
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/list-details" "#2d2e36">> 列出
 tags: $:/tags/TP/under-day
 
 <$let graphRootTiddler=<<currentTiddler>> >

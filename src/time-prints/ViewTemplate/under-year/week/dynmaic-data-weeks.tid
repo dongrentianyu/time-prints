@@ -1,6 +1,6 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-year/week/dynmaic-data-weeks
 tags: $:/tags/TP/under-year
-caption: {{$:/plugins/mabuqian/time-prints/image/list-details}} 周计
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/list-details" "#2d2e36">> 周计
 
 <$macrocall 
 $name=table-dynamic

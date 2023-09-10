@@ -1,5 +1,5 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-week/counts
-caption: {{$:/plugins/mabuqian/time-prints/image/analyse}} 占比
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/analyse" "#2d2e36">> 占比
 tags: $:/tags/TP/under-week
 
 <$let
@@ -39,7 +39,7 @@ time_week_working=<<time_week_working>>
 time_week_amusement=<<time_week_amusement>>
 time_week_activites=<<time_week_activites>>
 />
-{{$:/plugins/mabuqian/time-prints/image/week}} 赋值 {{!!time_week_all}}
+<<doc-svg "$:/plugins/mabuqian/time-prints/image/week" "#2d2e36">> 赋值 {{!!time_week_all}}
 </$button>
 
 </$let>

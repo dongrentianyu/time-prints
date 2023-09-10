@@ -1,6 +1,6 @@
 title: $:/plugins/mabuqian/time-prints/main/display-week/dynmaic-data-weeks
 tags: $:/tags/TP/main/display-week
-caption: {{$:/plugins/mabuqian/time-prints/image/list-details}} 统计
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/list-details" "#2d2e36">> 统计
 
 <$macrocall 
 $name=table-dynamic

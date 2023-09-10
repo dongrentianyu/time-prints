@@ -1,5 +1,5 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-month/counts
-caption: {{$:/plugins/mabuqian/time-prints/image/analyse}} 占比
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/analyse" "#2d2e36">> 占比
 tags: $:/tags/TP/under-month
 
 <$let
@@ -38,7 +38,7 @@ time_month_working=<<time_month_working>>
 time_month_amusement=<<time_month_amusement>>
 time_month_activites=<<time_month_activites>>
 />
-{{$:/plugins/mabuqian/time-prints/image/month}} 赋值 {{!!time_month_all}}
+<<doc-svg "$:/plugins/mabuqian/time-prints/image/month" "#2d2e36">> 赋值 {{!!time_month_all}}
 </$button>
 
 </$let>

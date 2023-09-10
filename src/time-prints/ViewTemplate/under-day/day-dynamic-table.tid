@@ -1,5 +1,5 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/day-dynamic-table
-caption: {{$:/plugins/mabuqian/time-prints/image/day}} 一天
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/day" "#2d2e36">> 一天
 tags: $:/tags/TP/under-day
 
 <$macrocall $name=aggregation  filter="[time_day<currentTiddler>]" defaultFields={{$:/plugins/mabuqian/time-prints/Config/day-dynamic-table}} class="w-100" state="TP-day-dynamic-table-state" />

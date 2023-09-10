@@ -1,5 +1,5 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/counts
-caption: {{$:/plugins/mabuqian/time-prints/image/analyse}} 占比
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/analyse" "#2d2e36">> 占比
 tags: $:/tags/TP/under-day
 
 <$let
@@ -38,7 +38,7 @@ time_day_working=<<time_day_working>>
 time_day_amusement=<<time_day_amusement>>
 time_day_activites=<<time_day_activites>>
 />
-{{$:/plugins/mabuqian/time-prints/image/day}} 赋值 {{!!time_day_all}}
+<<doc-svg "$:/plugins/mabuqian/time-prints/image/day" "#2d2e36">> 赋值 {{!!time_day_all}}
 </$button>
 
 </$let>

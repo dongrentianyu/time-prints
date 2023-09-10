@@ -1,6 +1,6 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-week/pie-chart
 tags: $:/tags/TP/under-week
-caption: {{$:/plugins/mabuqian/time-prints/image/analyse}} 饼图
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/analyse" "#2d2e36">> 饼图
 
 \define pie-chart-week()
 option = {

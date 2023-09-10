@@ -1,5 +1,5 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/timeline
-caption: {{$:/plugins/mabuqian/time-prints/image/timeline}} 时记
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/timeline" "#2d2e36">> 时记
 tags: $:/tags/TP/under-day
 
 <div style="column-count: 3;">

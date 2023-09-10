@@ -1,6 +1,6 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-year/month/dynmaic-data-months
 tags: $:/tags/TP/under-year
-caption: {{$:/plugins/mabuqian/time-prints/image/list-details}} 月计
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/list-details" "#2d2e36">> 月计
 
 <$macrocall 
 $name=table-dynamic

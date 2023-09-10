@@ -1,5 +1,5 @@
 title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-week/dynmaic-data-events
 tags: $:/tags/TP/under-week
-caption: {{$:/plugins/mabuqian/time-prints/image/week}} 一周
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/week" "#2d2e36">> 一周
 
 <$macrocall $name=aggregation  filter="[time_form[days]tag<currentTiddler>tagging[]]" defaultFields={{$:/plugins/mabuqian/time-prints/Config/week-dynamic-table-events}} class="w-100" state="TP-week-dynamic-table-events-state" />
