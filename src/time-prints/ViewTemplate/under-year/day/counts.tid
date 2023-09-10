@@ -39,6 +39,6 @@ time_year_working=<<time_year_working>>
 time_year_amusement=<<time_year_amusement>>
 time_year_activites=<<time_year_activites>>
 />
-{{$:/plugins/mabuqian/time-prints/image/year}} 赋值 {{!!time_year_all}}
+<<doc-svg "$:/plugins/mabuqian/time-prints/image/year" "#2d2e36">> 赋值 {{!!time_year_all}}
 </$button>
 </$let>

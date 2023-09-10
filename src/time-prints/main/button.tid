@@ -217,7 +217,7 @@ years=<<now "YYYY" >>
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     {{$:/plugins/mabuqian/time-prints/image/year}} 一年
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/year" "#2d2e36">> 一年
 </$button>
 </$let>
 \end
