@@ -3,7 +3,21 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/butt
 \define set-time-end()
 <$button tooltip="确定当前时刻结束时刻">
 <$action-setfield time_end=<<now "0hh:0mm" >>/>
-<<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> 结束时刻
+<<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> 当前-结束
+</$button>
+\end
+
+\define set-time-start()
+<$button tooltip="确定当前时刻开始时刻">
+<$action-setfield time_start=<<now "0hh:0mm" >>/>
+<<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> 当前-开始
+</$button>
+\end
+
+\define set-time-end-start()
+<$button tooltip="确定结束时刻为开始时刻">
+<$action-setfield time_end={{!!time_start}}/>
+<<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> 结束-开始
 </$button>
 \end
 

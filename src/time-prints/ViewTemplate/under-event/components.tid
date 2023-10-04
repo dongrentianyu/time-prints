@@ -9,7 +9,9 @@ list-before: $:/core/ui/ViewTemplate/body
 <$list filter="[<currentTiddler>tags[]tagging[]] +[has[time_end]sort[time_end]last[1]]">
 最后一件事：&nbsp;<$link><<currentTiddler>></$link>&nbsp;&nbsp;{{!!time_end}}&nbsp;&nbsp;
 </$list>
+<<set-time-start>>&nbsp;&nbsp;
 <<set-time-end>>&nbsp;&nbsp;
+<<set-time-end-start>>&nbsp;&nbsp;
 <<set-time-start-end>>&nbsp;&nbsp;
 </div>
 
