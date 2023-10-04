@@ -17,18 +17,6 @@ tags: $:/tags/TP/under-day
     day_all_count={{{ [tag<currentTiddler>has[time_major]count[]]  }}}
 >
 
-|!类型|!生活|!学习|!工作|!娱乐|!活动|!总共|
-|!时间|<<time_day_life>>|<<time_day_study>>|<<time_day_working>>|<<time_day_amusement>>|<<time_day_activites>>|<<time_day_all>>|
-|!数量|<<day_life_count>>|<<day_study_count>>|<<day_working_count>>|<<day_amusement_count>>|<<day_activites_count>>|<<day_all_count>>|
-
-
-<$macrocall $name=donut-chart pct={{{ [<time_day_life>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="生活占比" color=green/>
-<$macrocall $name=donut-chart pct={{{ [<time_day_study>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="学习占比" color=blue/>
-<$macrocall $name=donut-chart pct={{{ [<time_day_working>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="工作占比" color=orange/>
-<$macrocall $name=donut-chart pct={{{ [<time_day_amusement>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="娱乐占比" color=red/>
-<$macrocall $name=donut-chart pct={{{ [<time_day_activites>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="活动占比" color=pink/>
-<$macrocall $name=donut-chart pct={{{ [<time_day_all>divide[1440]fixed[4]multiply[100]round[]] }}}  label="一天占比" color=brown/>
-
 <$button tooltip="一天结束后，进行赋值">
 <$action-setfield
 time_day_all=<<time_day_all>>
@@ -40,5 +28,17 @@ time_day_activites=<<time_day_activites>>
 />
 <<doc-svg "$:/plugins/mabuqian/time-prints/image/day" "#2d2e36">> 赋值 {{!!time_day_all}}
 </$button>
+
+|!类型|!生活|!学习|!工作|!娱乐|!活动|!总共|
+|!时间|<<time_day_life>>|<<time_day_study>>|<<time_day_working>>|<<time_day_amusement>>|<<time_day_activites>>|<<time_day_all>>|
+|!数量|<<day_life_count>>|<<day_study_count>>|<<day_working_count>>|<<day_amusement_count>>|<<day_activites_count>>|<<day_all_count>>|
+
+
+<$macrocall $name=donut-chart pct={{{ [<time_day_life>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="生活占比" color=green/>
+<$macrocall $name=donut-chart pct={{{ [<time_day_study>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="学习占比" color=blue/>
+<$macrocall $name=donut-chart pct={{{ [<time_day_working>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="工作占比" color=orange/>
+<$macrocall $name=donut-chart pct={{{ [<time_day_amusement>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="娱乐占比" color=red/>
+<$macrocall $name=donut-chart pct={{{ [<time_day_activites>divide<time_day_all>fixed[4]multiply[100]round[]] }}}  label="活动占比" color=pink/>
+<$macrocall $name=donut-chart pct={{{ [<time_day_all>divide[1440]fixed[4]multiply[100]round[]] }}}  label="一天占比" color=brown/>
 
 </$let>
