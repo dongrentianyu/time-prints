@@ -6,11 +6,16 @@ title: $:/plugins/mabuqian/time-prints/main/components
  <<simple-title-edit "$:/state/TP/PageLayout/create-tiddler-title" >>
 </div>
 
+<div class="flex-row">
+<div class="flex-col border">
+<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-button" mode="block"/>
 <div class="tp-sidebar-project-list-item" >
 <<create-events>>&nbsp;&nbsp;
 <<create-events-specific>>&nbsp;&nbsp;
 <<create-events-detail>>&nbsp;&nbsp;
 </div>
+</div>
+<div class="flex-col border">
 <div class="tp-sidebar-project-list-item" >
 <<create-days>>&nbsp;&nbsp;
 <<create-weeks>>&nbsp;&nbsp;
@@ -21,8 +26,8 @@ title: $:/plugins/mabuqian/time-prints/main/components
 <$edit-text tiddler="$:/state/TP/create-days-select" field="select-now" type="date" />&nbsp;&nbsp;
 <<create-days-select>>&nbsp;&nbsp;
 </div>
-
-<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-select" mode="block"/>
+</div>
+</div>
 
 <$let
 years=<<now "YYYY" >>

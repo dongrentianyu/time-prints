@@ -1,0 +1,51 @@
+title: $:/plugins/mabuqian/time-prints/main/new-button
+type: text/vnd.tiddlywiki
+
+<$button>
+<$action-setfield $tiddler="$:/state/select-field-search/tp-time_major" text="" />
+清空major
+</$button>
+<$button>
+<$action-setfield $tiddler="$:/state/select-filter-search/tp-time_specific" text="" />
+清空specific
+</$button>
+<$button>
+<$action-setfield $tiddler="$:/state/select-filter-search/tp-time_detail" text="" />
+清空detail
+</$button>
+<br/><br/>
+<$let 
+a={{{ [[$:/state/select-field-search/tp-time_major]get[text]] }}}
+b={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
+>
+<$list filter="[has[time_major]get[time_major]unique[]]" variable="button_time_major">
+<$button>
+<$action-setfield $tiddler="$:/state/select-field-search/tp-time_major" text=<<button_time_major>> />
+
+<<button_time_major>>
+
+</$button>
+</$list>
+<$reveal type="gt" state="$:/state/select-field-search/tp-time_major" text="1">
+<br/><br/>
+<$list filter="[time_major<a>get[time_specific]unique[]]" variable="button_time_specific">
+<$button>
+<$action-setfield $tiddler="$:/state/select-filter-search/tp-time_specific" text=<<button_time_specific>> />
+
+<<button_time_specific>>
+
+</$button>
+</$list>
+</$reveal>
+<$reveal type="gt" state="$:/state/select-filter-search/tp-time_specific" text="1">
+<br/><br/>
+<$list filter="[time_major<a>time_specific<b>has[time_detail]get[time_detail]unique[]]" variable="button_time_detail">
+<$button>
+<$action-setfield $tiddler="$:/state/select-filter-search/tp-time_detail" text=<<button_time_detail>> />
+
+<<button_time_detail>>
+
+</$button>
+</$list>
+</$reveal>
+</$let>

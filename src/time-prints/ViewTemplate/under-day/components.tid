@@ -5,16 +5,15 @@ list-before: $:/core/ui/ViewTemplate/body
 \import [[$:/plugins/mabuqian/time-prints/main/components/buttons]] [[$:/plugins/mabuqian/time-prints/view-template/under-day/components/buttons]]
 
 <$list filter="[<currentTiddler>time_form[days]!prefix[$:/]]">
+<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-button" mode="block"/>
 <div class="tp-sidebar-project-list-item" >
 <<create-events-under-day>>&nbsp;&nbsp;
 <<create-events-specific-under-day>>&nbsp;&nbsp;
 <<create-events-detail-under-day>>&nbsp;&nbsp;
 </div>
 
-<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-select" mode="block"/>
-
 <details>
-  <summary>查看更多内容</summary>
+<summary>查看更多内容</summary>
 
 <<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-day]]" "$:/plugins/mabuqian/time-prints/ViewTemplate/under-day/time-spare" "$:/state/tp/under-day" >>
 
