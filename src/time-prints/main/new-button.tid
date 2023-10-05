@@ -1,24 +1,11 @@
 title: $:/plugins/mabuqian/time-prints/main/new-button
 type: text/vnd.tiddlywiki
 
-<div class="tp-sidebar-project-list-item" >
-<$button>
-<$action-setfield $tiddler="$:/state/select-field-search/tp-time_major" text="" />
-清空major
-</$button>
-<$button>
-<$action-setfield $tiddler="$:/state/select-filter-search/tp-time_specific" text="" />
-清空specific
-</$button>
-<$button>
-<$action-setfield $tiddler="$:/state/select-filter-search/tp-time_detail" text="" />
-清空detail
-</$button>
-</div>
 <$let 
 a={{{ [[$:/state/select-field-search/tp-time_major]get[text]] }}}
 b={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
 >
+<div class="tp-sidebar-project-list-item" >
 <$list filter="[has[time_major]get[time_major]unique[]]" variable="button_time_major">
 <$button>
 <$action-setfield $tiddler="$:/state/select-field-search/tp-time_major" text=<<button_time_major>> />
@@ -27,6 +14,7 @@ b={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
 
 </$button>
 </$list>
+</div>
 <$reveal type="gt" state="$:/state/select-field-search/tp-time_major" text="1">
 <br/><br/>
 <$list filter="[time_major<a>get[time_specific]unique[]]" variable="button_time_specific">

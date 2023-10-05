@@ -3,19 +3,19 @@ code-body: yes
 
 \define time-picker(field)
 \function  hour()[[$:/state/tp/time-picker]get[hour]]
-\function  minute()[[$:/state/tp/time-picker]get[minute]]
+\function  minute-10()[[$:/state/tp/time-picker]get[minute-10]]
+\function  minute-1()[[$:/state/tp/time-picker]get[minute-1]]
+\function  minute()[<minute-10>addsuffix<minute-1>]
 \function  time()[<hour>addsuffix[:]addsuffix<minute>]
-
-<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/time-picker-select" mode="block"/>
 
 <$button>
 <$action-setfield $field=$field$  $value=<<time>> />
 <$action-setfield $tiddler="$:/state/tp/time-picker"  hour="" />
-<$action-setfield $tiddler="$:/state/tp/time-picker"  minute="" />
+<$action-setfield $tiddler="$:/state/tp/time-picker"  minute-10="" />
+<$action-setfield $tiddler="$:/state/tp/time-picker"  minute-1="" />
 设置时间
 </$button>
 
 \end
-
 
 <<time-picker "test" >>

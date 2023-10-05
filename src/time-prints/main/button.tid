@@ -221,3 +221,24 @@ years=<<now "YYYY" >>
 </$button>
 </$let>
 \end
+
+\define empty-major()
+<$button>
+<$action-setfield $tiddler="$:/state/select-field-search/tp-time_major" text="" />
+清空major
+</$button>
+\end
+
+\define empty-specific()
+<$button>
+<$action-setfield $tiddler="$:/state/select-filter-search/tp-time_specific" text="" />
+清空specific
+</$button>
+\end
+
+\define empty-detail()
+<$button>
+<$action-setfield $tiddler="$:/state/select-filter-search/tp-time_detail" text="" />
+清空detail
+</$button>
+\end
