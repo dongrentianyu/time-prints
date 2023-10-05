@@ -1,0 +1,13 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-specific/components
+tags: $:/tags/ViewTemplate
+list-before: $:/core/ui/ViewTemplate/body
+
+<$list filter="[<currentTiddler>time_form[specific]!prefix[$:/]]">
+
+<details>
+<summary>查看统计内容</summary>
+
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/under-specific]]" "$:/plugins/mabuqian/time-prints/ViewTemplate/under-specific/counts" "$:/state/tp/under-specific">>
+
+</details>
+</$list>

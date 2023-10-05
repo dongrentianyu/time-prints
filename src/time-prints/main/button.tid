@@ -242,3 +242,27 @@ years=<<now "YYYY" >>
 清空detail
 </$button>
 \end
+
+\define create-under-specific()
+<$button tooltip="点击创建time_specific聚合">
+    <$action-createtiddler
+      $basetitle={{$:/state/TP/PageLayout/create-tiddler-title}}
+      time_form="specific"
+     >
+     <<after-create-tiddler-without-parent>>
+     </$action-createtiddler>
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/specific" "#2d2e36">> specific
+</$button>
+\end
+
+\define create-under-detail()
+<$button tooltip="点击创建time_detail聚合">
+    <$action-createtiddler
+      $basetitle={{$:/state/TP/PageLayout/create-tiddler-title}}
+      time_form="detail"
+     >
+     <<after-create-tiddler-without-parent>>
+     </$action-createtiddler>
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/detail" "#2d2e36">> detail
+</$button>
+\end

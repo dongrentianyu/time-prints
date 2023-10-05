@@ -1,0 +1,8 @@
+title: $:/plugins/mabuqian/time-prints/main/display-specific-detail/components
+
+<details>
+  <summary>查看specifict和detail统计内容</summary>
+
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/main/display-specific-detail]]" "$:/plugins/mabuqian/time-prints/main/display-specific-detail/counts" "$:/state/tp/display-specific-detail">>
+
+</details>

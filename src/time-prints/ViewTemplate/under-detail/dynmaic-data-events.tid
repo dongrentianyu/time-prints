@@ -1,0 +1,5 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-detail/dynmaic-data-events
+tags: $:/tags/TP/under-detail
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/detail" "#2d2e36">> 总共
+
+<$macrocall $name=aggregation  filter="[time_detail<currentTiddler>]" defaultFields={{$:/plugins/mabuqian/time-prints/Config/detail-dynamic-table-events}} class="w-100" state="TP-detail-dynamic-table-events-state" />

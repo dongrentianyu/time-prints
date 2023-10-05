@@ -7,3 +7,5 @@ list-before: $:/config/TiddlerIconFilters/default
 [time_form[weeks]then[$:/plugins/mabuqian/time-prints/image/week]]
 [time_form[months]then[$:/plugins/mabuqian/time-prints/image/month]]
 [time_form[years]then[$:/plugins/mabuqian/time-prints/image/year]]
+[time_form[detail]then[$:/plugins/mabuqian/time-prints/image/detail]]
+[time_form[specific]then[$:/plugins/mabuqian/time-prints/image/specific]]

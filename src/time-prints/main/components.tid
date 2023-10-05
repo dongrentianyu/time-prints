@@ -31,6 +31,10 @@ title: $:/plugins/mabuqian/time-prints/main/components
 <$edit-text tiddler="$:/state/TP/create-days-select" field="select-now" type="date" />&nbsp;&nbsp;
 <<create-days-select>>&nbsp;&nbsp;
 </div>
+<div class="tp-sidebar-project-list-item" >
+<<create-under-specific>>&nbsp;&nbsp;
+<<create-under-detail>>&nbsp;&nbsp;
+</div>
 </div>
 </div>
 

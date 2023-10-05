@@ -1,0 +1,12 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-detail/counts
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/analyse" "#2d2e36">> 占比
+tags: $:/tags/TP/under-detail
+
+
+<$let
+    time_detail_count={{{ [time_detail<currentTiddler>count[]] }}}
+>
+
+<<time_detail_count>>
+
+</$let>
