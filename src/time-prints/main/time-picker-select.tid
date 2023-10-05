@@ -24,7 +24,7 @@ title: $:/plugins/mabuqian/time-prints/main/time-picker-select
 </$list>
 </$set>
 
-<$set name="minute-10" value="0 1 2 3 4 5">
+<$set name="minute-10" value="1 2 3 4 5 0">
 <$list filter="[enlist<minute-10>]" variable="minute-10">
 <$button>
 <$action-setfield $tiddler="$:/state/tp/time-picker" $field="minute-10" $value=<<minute-10>> />
@@ -35,7 +35,7 @@ title: $:/plugins/mabuqian/time-prints/main/time-picker-select
 </$list>
 </$set>
 
-<$set name="minute-1" value="0 1 2 3 4 5 6 7 8 9">
+<$set name="minute-1" value="1 2 3 4 5 6 7 8 9 0">
 <$list filter="[enlist<minute-1>]" variable="minute-1">
 <$button>
 <$action-setfield $tiddler="$:/state/tp/time-picker" $field="minute-1" $value=<<minute-1>> />
