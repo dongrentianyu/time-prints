@@ -13,7 +13,7 @@ code-body: yes
 <$action-setfield $tiddler="$:/state/tp/time-picker"  hour="" />
 <$action-setfield $tiddler="$:/state/tp/time-picker"  minute-10="" />
 <$action-setfield $tiddler="$:/state/tp/time-picker"  minute-1="" />
-设置时间
+设置时间 {{!!$field$}}
 </$button>
 
 \end
