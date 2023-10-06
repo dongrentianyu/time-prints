@@ -38,7 +38,7 @@ title: $:/plugins/mabuqian/time-prints/main/components
 </div>
 </div>
 
-<$list filter="[has[time_end]sort[modified]last[2]]">
+<$list filter="[has[time_end]sort[created]last[2]]">
 <$link><<currentTiddler>></$link>&nbsp;&nbsp;{{!!time_day}}&nbsp;&nbsp;{{!!time_end}}&nbsp;&nbsp;
 </$list>
 

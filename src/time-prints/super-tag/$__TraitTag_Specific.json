@@ -1,0 +1,12 @@
+[
+    {
+        "created": "20231006080151733",
+        "text": "",
+        "title": "$:/TraitTag/Specific",
+        "modified": "20231006080213201",
+        "tags": "$:/SuperTag/TraitTag",
+        "type": "text/vnd.tiddlywiki",
+        "schema": "{\n  \"type\": \"object\",\n  \"title\": \"title\",\n  \"properties\": {\n    \"specific_major\": {\n      \"type\": \"string\",\n      \"title\": \"主分类\",\n      \"enum\": [\n        \"生活\",\n        \"娱乐\",\n        \"学习\",\n        \"工作\",\n        \"活动\"\n      ]\n    }\n  },\n  \"required\": [\n    \"specific_major\"\n  ]\n}",
+        "wl-field-name-text": "schema"
+    }
+]

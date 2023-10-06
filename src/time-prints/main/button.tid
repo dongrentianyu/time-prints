@@ -248,6 +248,8 @@ years=<<now "YYYY" >>
     <$action-createtiddler
       $basetitle={{$:/state/TP/PageLayout/create-tiddler-title}}
       time_form="specific"
+      super-tag="specific"
+      specific_major="生活"
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
@@ -260,6 +262,9 @@ years=<<now "YYYY" >>
     <$action-createtiddler
       $basetitle={{$:/state/TP/PageLayout/create-tiddler-title}}
       time_form="detail"
+      super-tag="detail"
+      detail_major="生活"
+      detail_specific=""
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>

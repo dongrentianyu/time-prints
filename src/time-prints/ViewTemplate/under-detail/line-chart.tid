@@ -1,0 +1,5 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-detail/pie-chart
+tags: $:/tags/TP/under-detail
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/stacked-bar-chart" "#2d2e36">> 折线 
+
+<$echarts $tiddler="$:/plugins/mabuqian/time-prints/ViewTemplate/under-detail/line-chart-addon" currentTiddler=<<currentTiddler>> $height="500px"/>

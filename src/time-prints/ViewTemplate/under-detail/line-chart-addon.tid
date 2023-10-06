@@ -1,0 +1,26 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-detail/line-chart-addon
+
+<$let 
+graphRootTiddler=<<currentTiddler>>
+>
+{
+  "xAxis": {
+    "type": "category",
+    "data": [<$list filter="[time_detail<graphRootTiddler>each[time_day]get[time_day]unique[]]">'<<currentTiddler>>', </$list>]
+  },
+  "yAxis": {
+    "type": "value"
+  },
+  "series": [
+    {
+      "data": [<$list filter="[time_detail<graphRootTiddler>each[time_day]get[time_spent]sum[]]" >'<<currentTiddler>>', </$list>],
+      "type": "line",
+			 "type": "line",
+			 "label": {
+        "show": "true",
+        "position": 'top'
+      }
+    }
+  ]
+}
+</$let>

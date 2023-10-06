@@ -1,15 +1,8 @@
-created: 20231004065021133
-modified: 20231005015353435
-super-tag: time
-tags: 2023-10-04
-time_day: 2023-10-04
-time_detail: 饥荒
-time_end: 06:59
-time_form: events
-time_major: 生活
-time_record: 正常记录
-time_specific: 睡觉
-time_spent: 180
-time_start: 02:33
+created: 20231006090318335
+detail_major: 生活
+detail_specific: 
+modified: 20231006090324168
+super-tag: detail
+time_form: detail
 title: 饥荒
 type: text/vnd.tiddlywiki

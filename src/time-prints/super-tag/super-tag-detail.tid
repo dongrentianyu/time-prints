@@ -1,0 +1,9 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/super-tag-detail
+list-after: $:/plugins/mabuqian/time-prints/ViewTemplate/under-day/components
+tags: $:/tags/ViewTemplate
+
+<$list filter="[<currentTiddler>has[super-tag]super-tag[detail]!prefix[$:/]]">
+
+<$json-editor-form filter="[all[current]enlist{!!super-tag}tags[]] :filter[tags[]match[$:/SuperTag/TraitTag]] :and[get[schema]]" tiddler=<<currentTiddler>> />
+
+</$list>
