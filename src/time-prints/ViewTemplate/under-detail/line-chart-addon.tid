@@ -3,6 +3,7 @@ title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-detail/line-chart-addo
 <$let 
 graphRootTiddler=<<currentTiddler>>
 >
+
 {
   "xAxis": {
     "type": "category",
@@ -13,7 +14,7 @@ graphRootTiddler=<<currentTiddler>>
   },
   "series": [
     {
-      "data": [<$list filter="[time_detail<graphRootTiddler>each[time_day]get[time_spent]sum[]]" >'<<currentTiddler>>', </$list>],
+      "data": [<$list filter="[time_detail<graphRootTiddler>each[time_day]get[time_day]unique[]]"  variable="this_day"><$list filter="[time_detail<graphRootTiddler>time_day<this_day>get[time_spent]sum[]]"  variable="this_sum">'<<this_sum>>', </$list></$list>],
       "type": "line",
 			 "type": "line",
 			 "label": {
