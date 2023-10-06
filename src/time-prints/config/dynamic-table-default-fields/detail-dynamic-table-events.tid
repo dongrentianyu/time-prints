@@ -1,0 +1,3 @@
+title: $:/plugins/mabuqian/time-prints/Config/detail-dynamic-table-events
+
+tbl-expand title time_major time_spent time_day time_specific

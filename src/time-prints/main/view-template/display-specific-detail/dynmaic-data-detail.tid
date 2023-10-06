@@ -2,4 +2,4 @@ title: $:/plugins/mabuqian/time-prints/main/display-specific-detail/dynmaic-data
 tags: $:/tags/TP/main/display-specific-detail
 caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/detail" "#2d2e36">> 总共
 
-<$macrocall $name=aggregation  filter="[time_form[detail]]" defaultFields={{$:/plugins/mabuqian/time-prints/Config/detail-dynamic-table-events}} class="w-100" state="TP-display-specific-detail-dynamic-table-events-state" />
+<$macrocall $name=aggregation  filter="[time_form[detail]]" defaultFields={{$:/plugins/mabuqian/time-prints/Config/display-detail-dynamic-table-events}} class="w-100" state="TP-display-specific-detail-dynamic-table-events-state" />

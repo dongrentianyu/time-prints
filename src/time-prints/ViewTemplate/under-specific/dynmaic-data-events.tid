@@ -1,0 +1,5 @@
+title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-specific/dynmaic-data-events
+tags: $:/tags/TP/under-specific
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/specific" "#2d2e36">> 一周
+
+<$macrocall $name=aggregation  filter="[time_specific<currentTiddler>]" defaultFields={{$:/plugins/mabuqian/time-prints/Config/specific-dynamic-table-events}} class="w-100" state="TP-specific-dynamic-table-events-state" />

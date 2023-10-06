@@ -2,11 +2,15 @@ title: $:/plugins/mabuqian/time-prints/ViewTemplate/under-detail/counts
 caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/analyse" "#2d2e36">> 占比
 tags: $:/tags/TP/under-detail
 
-
 <$let
     time_detail_count={{{ [time_detail<currentTiddler>count[]] }}}
+    time_detail_sum={{{ [time_detail<currentTiddler>get[time_spent]sum[]] }}}
+    time_detail_average={{{ [time_detail<currentTiddler>get[time_spent]] +[average[]round[]] }}}
 >
 
-<<time_detail_count>>
+总共：<<time_detail_count>>
 
+总计：<<time_detail_sum>>
+
+平均：<<time_detail_average>>
 </$let>
