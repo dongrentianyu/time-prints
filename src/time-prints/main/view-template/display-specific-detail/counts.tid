@@ -1,2 +1,14 @@
 title: $:/plugins/mabuqian/time-prints/main/display-specific-detail/counts
+tags: $:/tags/TP/main/display-specific-detail
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/analyse" "#2d2e36">>
 
+<$let
+	detail_count={{{ [time_form[detail]count[]]  }}}
+    specific_count={{{ [time_form[specific]count[]]  }}}
+>
+
+specific总计: <<specific_count>>
+
+detail总计: <<detail_count>>
+
+</$let>
