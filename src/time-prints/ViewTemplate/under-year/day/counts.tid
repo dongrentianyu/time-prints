@@ -30,7 +30,7 @@ tags: $:/tags/TP/under-year
 <$macrocall $name=donut-chart pct={{{ [<time_year_activites>divide<time_year_all>fixed[4]multiply[100]round[]] }}}  label="活动占比" color=pink/>
 <$macrocall $name=donut-chart pct={{{ [<time_year_all>divide[438000]fixed[4]multiply[100]round[]] }}}  label="一年占比" color=brown/>
 
-<$button tooltip="一年结束后，进行赋值">
+<$button class="tc-btn-invisible tft-btn-common" tooltip="一年结束后，进行赋值">
 <$action-setfield
 time_year_all=<<time_year_all>>
 time_year_life=<<time_year_life>>

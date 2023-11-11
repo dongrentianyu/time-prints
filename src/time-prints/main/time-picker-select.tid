@@ -1,47 +1,40 @@
 title: $:/plugins/mabuqian/time-prints/main/time-picker-select
 
-<$set name="hour-12" value="00 01 02 03 04 05 06 07 08 09 10 11">
-<div class="tp-sidebar-project-list-item" >
-<$list filter="[enlist<hour-12>]" variable="hour-12">
-<$button>
-<$action-setfield $tiddler="$:/state/tp/time-picker" $field="hour" $value=<<hour-12>> />
-
-<<hour-12>>
-
-</$button>
-</$list>
+<div class="flex-row">
+  <div class="flex-col">
+     <$set name="hour-12" value="00 01 02 03 04 05 06 07 08 09 10 11">
+     <$select tiddler='$:/state/tp/time-picker' field='hour' multiple size='6' class="w-100">
+     <$list filter='[enlist<hour-12>]'>
+     <option><$view field='title'/></option>
+     </$list>
+      </$select>
+     </$set>
+  </div>
+  <div class="flex-col">
+   <$set name="hour-24" value="12 13 14 15 16 17 18 19 20 21 22 23">
+   <$select tiddler='$:/state/tp/time-picker' field='hour' multiple size='6' class="w-100">
+   <$list filter='[enlist<hour-24>]'>
+   <option><$view field='title'/></option>
+   </$list>
+   </$select>
+   </$set>
+  </div>
+  <div class="flex-col">
+   <$set name="minute-10" value="1 2 3 4 5 0">
+   <$select tiddler='$:/state/tp/time-picker' field='minute-10' multiple size='6' class="w-100">
+   <$list filter='[enlist<minute-10>]'>
+   <option><$view field='title'/></option>
+   </$list>
+   </$select>
+   </$set>
+ </div>
+  <div class="flex-col">
+    <$set name="minute-1" value="1 2 3 4 5 6 7 8 9 0">
+    <$select tiddler='$:/state/tp/time-picker' field='minute-1' multiple size='6' class="w-100">
+    <$list filter='[enlist<minute-1>]'>
+    <option><$view field='title'/></option>
+    </$list>
+    </$select>
+    </$set>
+ </div>
 </div>
-</$set>
-
-<$set name="hour-24" value="12 13 14 15 16 17 18 19 20 21 22 23">
-<$list filter="[enlist<hour-24>]" variable="hour-24">
-<$button>
-<$action-setfield $tiddler="$:/state/tp/time-picker" $field="hour" $value=<<hour-24>> />
-
-<<hour-24>>
-
-</$button>
-</$list>
-</$set>
-
-<$set name="minute-10" value="1 2 3 4 5 0">
-<$list filter="[enlist<minute-10>]" variable="minute-10">
-<$button>
-<$action-setfield $tiddler="$:/state/tp/time-picker" $field="minute-10" $value=<<minute-10>> />
-
-<<minute-10>>
-
-</$button>
-</$list>
-</$set>
-
-<$set name="minute-1" value="1 2 3 4 5 6 7 8 9 0">
-<$list filter="[enlist<minute-1>]" variable="minute-1">
-<$button>
-<$action-setfield $tiddler="$:/state/tp/time-picker" $field="minute-1" $value=<<minute-1>> />
-
-<<minute-1>>
-
-</$button>
-</$list>
-</$set>

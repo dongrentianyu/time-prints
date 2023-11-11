@@ -7,7 +7,7 @@ b={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
 >
 <div class="tp-sidebar-project-list-item" >
 <$list filter="[has[time_major]get[time_major]unique[]]" variable="button_time_major">
-<$button>
+<$button class="tc-btn-invisible tft-btn-common">
 <$action-setfield $tiddler="$:/state/select-field-search/tp-time_major" text=<<button_time_major>> />
 
 <<button_time_major>>
@@ -18,7 +18,7 @@ b={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
 <$reveal type="gt" state="$:/state/select-field-search/tp-time_major" text="1">
 <br/><br/>
 <$list filter="[time_major<a>get[time_specific]unique[]]" variable="button_time_specific">
-<$button>
+<$button class="tc-btn-invisible tft-btn-common">
 <$action-setfield $tiddler="$:/state/select-filter-search/tp-time_specific" text=<<button_time_specific>> />
 
 <<button_time_specific>>
@@ -29,7 +29,7 @@ b={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
 <$reveal type="gt" state="$:/state/select-filter-search/tp-time_specific" text="1">
 <br/><br/>
 <$list filter="[has[time_detail]time_major<a>time_specific<b>get[time_detail]unique[]last{$:/plugins/mabuqian/time-prints/Config/last-number}]" variable="button_time_detail">
-<$button>
+<$button class="tc-btn-invisible tft-btn-common">
 <$action-setfield $tiddler="$:/state/select-filter-search/tp-time_detail" text=<<button_time_detail>> />
 
 <<button_time_detail>>

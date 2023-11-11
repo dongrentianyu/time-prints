@@ -2,7 +2,7 @@ title: $:/plugins/mabuqian/time-prints/main/components/buttons
 code-body: yes
 
 \define create-events()
-<$button tooltip="点击创建事件">
+<$button class="tc-btn-invisible tft-btn-common" tooltip="点击创建事件">
     <$action-createtiddler
       $basetitle={{$:/state/TP/PageLayout/create-tiddler-title}}
       super-tag="time"
@@ -41,7 +41,7 @@ tags_year_month={{{ [<day_months>addprefix[-]addprefix<day_years>] }}}
 tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
 >
 <$set name="tags" filter="[<tags_year_month>] [<tags_year_week>]">
-<$button tooltip="点击创建一天">
+<$button class="tc-btn-invisible tft-btn-common" tooltip="点击创建一天">
     <$action-createtiddler
       $basetitle=<<now "YYYY-0MM-0DD" >>
       super-tag="days"
@@ -64,7 +64,7 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
 
 \define create-events-under-day()
 <$let time-end={{{ [tag<currentTiddler>has[time_end]sort[time_end]last[1]get[time_end]] }}} >
-<$button tooltip="点击创建事件，在最后一次时间基础上">
+<$button class="tc-btn-invisible tft-btn-common" tooltip="点击创建事件，在最后一次时间基础上">
     <$action-createtiddler
       $basetitle={{$:/state/TP/PageLayout/create-tiddler-title}}
       super-tag="time"
@@ -84,7 +84,7 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
 \end
 
 \define create-events-specific()
-<$button tooltip="快速创建事件">
+<$button class="tc-btn-invisible tft-btn-common" tooltip="快速创建事件">
     <$action-createtiddler
       $basetitle={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
       super-tag="time"
@@ -104,7 +104,7 @@ tags_year_week={{{ [<year_weeks>addprefix[-]addprefix<day_years>] }}}
 \end
 
 \define create-events-detail()
-<$button tooltip="快速创建事件">
+<$button class="tc-btn-invisible tft-btn-common" tooltip="快速创建事件">
     <$action-createtiddler
       $basetitle={{{ [[$:/state/select-filter-search/tp-time_detail]get[text]] }}}
       super-tag="time"
@@ -130,7 +130,7 @@ week_years=<<now "YYYY" >>
 year_weeks=<<now "0WW" >>
 title_year_week={{{ [<year_weeks>addprefix[-]addprefix<week_years>] }}}
 >
-<$button tooltip="点击创建一周">
+<$button class="tc-btn-invisible tft-btn-common" tooltip="点击创建一周">
     <$action-createtiddler
       $basetitle=<<title_year_week>>
       time_form="weeks"
@@ -152,7 +152,7 @@ month_years=<<now "YYYY" >>
 year_months=<<now "0MM" >>
 title_year_month={{{ [<year_months>addprefix[-]addprefix<month_years>] }}}
 >
-<$button tooltip="点击创建一月">
+<$button class="tc-btn-invisible tft-btn-common" tooltip="点击创建一月">
     <$action-createtiddler
       $basetitle=<<title_year_month>>
       time_form="months"
@@ -182,7 +182,7 @@ day_weeks={{{ [<select-time>format:date[dddd]]  }}}
 year_days={{{ [<select-time>format:date[0ddddd]]  }}}
 >
 <$set name="tags" filter="[<tags_year_month>] [<tags_year_week>]">
-<$button tooltip="点击创建选择的一天">
+<$button class="tc-btn-invisible tft-btn-common" tooltip="点击创建选择的一天">
     <$action-createtiddler
       $basetitle=<<select-now>>
       super-tag="days"
@@ -207,7 +207,7 @@ year_days={{{ [<select-time>format:date[0ddddd]]  }}}
 <$let
 years=<<now "YYYY" >>
 >
-<$button tooltip="点击创建一年">
+<$button class="tc-btn-invisible tft-btn-common" tooltip="点击创建一年">
     <$action-createtiddler
       $basetitle=<<years>>
       time_form="years"
@@ -223,28 +223,28 @@ years=<<now "YYYY" >>
 \end
 
 \define empty-major()
-<$button>
+<$button class="tc-btn-invisible tft-btn-common">
 <$action-setfield $tiddler="$:/state/select-field-search/tp-time_major" text="" />
 清空major
 </$button>
 \end
 
 \define empty-specific()
-<$button>
+<$button class="tc-btn-invisible tft-btn-common">
 <$action-setfield $tiddler="$:/state/select-filter-search/tp-time_specific" text="" />
 清空specific
 </$button>
 \end
 
 \define empty-detail()
-<$button>
+<$button class="tc-btn-invisible tft-btn-common">
 <$action-setfield $tiddler="$:/state/select-filter-search/tp-time_detail" text="" />
 清空detail
 </$button>
 \end
 
 \define create-under-specific()
-<$button tooltip="点击创建time_specific聚合">
+<$button class="tc-btn-invisible tft-btn-common" tooltip="点击创建time_specific聚合">
     <$action-createtiddler
       $basetitle={{$:/state/TP/PageLayout/create-tiddler-title}}
       time_form="specific"
@@ -258,7 +258,7 @@ years=<<now "YYYY" >>
 \end
 
 \define create-under-detail()
-<$button tooltip="点击创建time_detail聚合">
+<$button class="tc-btn-invisible tft-btn-common" tooltip="点击创建time_detail聚合">
     <$action-createtiddler
       $basetitle={{$:/state/TP/PageLayout/create-tiddler-title}}
       time_form="detail"

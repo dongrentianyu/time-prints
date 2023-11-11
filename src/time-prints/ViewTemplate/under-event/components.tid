@@ -16,15 +16,12 @@ list-before: $:/core/ui/ViewTemplate/body
 </div>
 
 <div class="flex-row">
-  <div class="flex-col border">
+  <div class="flex-col">
    <$transclude tiddler="$:/plugins/mabuqian/time-prints/view-template/under-event/components/time-picker" mode="block"/>
   </div>
-  <div class="flex-col border">
+  <div class="flex-col">
    <div class="flex-row">
-    <div class="flex-col border">
-     <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-button" mode="block"/>
-    </div>
-    <div class="flex-col border">
+    <div class="flex-col">
      <div class="tp-sidebar-project-list-item" >
      <<empty-major>>&nbsp;&nbsp;
      <<empty-specific>>&nbsp;&nbsp;
@@ -35,6 +32,9 @@ list-before: $:/core/ui/ViewTemplate/body
       <<create-events-specific-under-event>>&nbsp;&nbsp;
       <<create-events-detail-under-event>>&nbsp;&nbsp;
      </div>
+    <div class="flex-col">
+     <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-button" mode="block"/>
+    </div>
     </div>
    </div>
   </div>

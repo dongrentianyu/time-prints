@@ -8,7 +8,7 @@ code-body: yes
 \function  minute()[<minute-10>addsuffix<minute-1>]
 \function  time()[<hour>addsuffix[:]addsuffix<minute>]
 
-<$button>
+<$button class="tc-btn-invisible tft-btn-common">
 <$action-setfield $field=$field$  $value=<<time>> />
 <$action-setfield $tiddler="$:/state/tp/time-picker"  hour="" />
 <$action-setfield $tiddler="$:/state/tp/time-picker"  minute-10="" />

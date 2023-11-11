@@ -7,10 +7,10 @@ list-before: $:/core/ui/ViewTemplate/body
 <$list filter="[<currentTiddler>time_form[days]!prefix[$:/]]">
 
 <div class="flex-row">
-    <div class="flex-col border">
+    <div class="flex-col">
       <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-button" mode="block"/>
     </div>
-    <div class="flex-col border">
+    <div class="flex-col">
      <div class="tp-sidebar-project-list-item" >
      <<empty-major>>&nbsp;&nbsp;
      <<empty-specific>>&nbsp;&nbsp;

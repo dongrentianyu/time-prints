@@ -7,10 +7,10 @@ caption: time-picker
 <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/time-picker-select" mode="block"/>
 
 <div class="flex-row">
-    <div class="flex-col border">
+    <div class="flex-col">
       开始时间：<<time-picker "time_start" >>
     </div>
-    <div class="flex-col border">
+    <div class="flex-col">
       结束时间：<<time-picker "time_end" >>
     </div>
 </div>
