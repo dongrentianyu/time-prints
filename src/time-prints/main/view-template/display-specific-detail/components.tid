@@ -1,8 +1,5 @@
 title: $:/plugins/mabuqian/time-prints/main/display-specific-detail/components
+caption: specifict和detail
+tags: $:/tags/TP/main/display
 
-<details>
-  <summary>查看specifict和detail统计内容</summary>
-
-<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/main/display-specific-detail]]" "$:/plugins/mabuqian/time-prints/main/display-specific-detail/dynmaic-data-detail" "$:/state/tp/display-specific-detail">>
-
-</details>
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/main/display-specific-detail]]" "$:/plugins/mabuqian/time-prints/main/display-specific-detail/dynmaic-data-detail" "$:/state/tp/display-specific-detail" "tc-vertical">>

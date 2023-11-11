@@ -1,8 +1,5 @@
 title: $:/plugins/mabuqian/time-prints/main/display-day/components
+caption: 最近七天
+tags: $:/tags/TP/main/display
 
-<details>
-  <summary>查看最近七天的内容</summary>
-
-<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/main/display-day]]" "$:/plugins/mabuqian/time-prints/main/display-day/counts" "$:/state/tp/display-day">>
-
-</details>
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/main/display-day]]" "$:/plugins/mabuqian/time-prints/main/display-day/counts" "$:/state/tp/display-day" "tc-vertical">>

@@ -1,6 +1,6 @@
 title: $:/plugins/mabuqian/time-prints/main/display-specific-detail/counts
 tags: $:/tags/TP/main/display-specific-detail
-caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/analyse" "#2d2e36">>
+caption: <<doc-svg "$:/plugins/mabuqian/time-prints/image/analyse" "#2d2e36">> 统计
 
 <$let
 	detail_count={{{ [time_form[detail]count[]]  }}}
