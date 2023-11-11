@@ -1,7 +1,7 @@
 title: $:/plugins/mabuqian/time-prints/view-template/under-day/components/buttons
 
 \define create-events-specific-under-day()
-<$button class="tc-btn-invisible tft-btn-common" tooltip="快速创建事件">
+<$button class="tc-btn-invisible tft-rpqn-common" tooltip="快速创建事件">
     <$action-createtiddler
       $basetitle={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
       super-tag="time"
@@ -21,7 +21,7 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-day/components/button
 \end
 
 \define create-events-detail-under-day()
-<$button class="tc-btn-invisible tft-btn-common" tooltip="快速创建事件">
+<$button class="tc-btn-invisible tft-rpqn-common" tooltip="快速创建事件">
     <$action-createtiddler
       $basetitle={{{ [[$:/state/select-filter-search/tp-time_detail]get[text]] }}}
       super-tag="time"

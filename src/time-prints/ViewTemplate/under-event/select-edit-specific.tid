@@ -35,7 +35,7 @@ grid-row-gap: 10px;
 <$edit-text  field="time_specific" class="w-100 h-100" tag=textarea/>
 </div>
 <div class="div3">
-<$button class="tc-btn-invisible tft-btn-common"  class="w-100 h-100" tooltip="确定添加specific">
+<$button class="tc-btn-invisible tft-rpqn-common"  class="w-100 h-100" tooltip="确定添加specific">
 <$action-setfield  time_specific={{{ [[$:/state/tf/select-edit-specific]get[testing]] }}}   />
 specific
 </$button>
@@ -51,7 +51,7 @@ specific
 <$edit-text  field="time_detail" class="w-100 h-100" tag=textarea/>
 </div>
 <div class="div6">
-<$button class="tc-btn-invisible tft-btn-common" class="w-100 h-100" tooltip="确定添加detail">
+<$button class="tc-btn-invisible tft-rpqn-common" class="w-100 h-100" tooltip="确定添加detail">
 <$action-setfield time_detail={{{ [[$:/state/tf/select-edit-detail]get[testing]] }}}   />
 detail
 </$button>

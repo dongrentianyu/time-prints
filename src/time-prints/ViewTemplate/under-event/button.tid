@@ -1,21 +1,21 @@
 title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/buttons
 
 \define set-time-end()
-<$button class="tc-btn-invisible tft-btn-common" tooltip="确定当前时刻结束时刻">
+<$button class="tc-btn-invisible tft-rpqn-common" tooltip="确定当前时刻结束时刻">
 <$action-setfield time_end=<<now "0hh:0mm" >>/>
 <<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> 当前-结束
 </$button>
 \end
 
 \define set-time-start()
-<$button class="tc-btn-invisible tft-btn-common" tooltip="确定当前时刻开始时刻">
+<$button class="tc-btn-invisible tft-rpqn-common" tooltip="确定当前时刻开始时刻">
 <$action-setfield time_start=<<now "0hh:0mm" >>/>
 <<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> 当前-开始
 </$button>
 \end
 
 \define set-time-end-start()
-<$button class="tc-btn-invisible tft-btn-common" tooltip="确定结束时刻为开始时刻">
+<$button class="tc-btn-invisible tft-rpqn-common" tooltip="确定结束时刻为开始时刻">
 <$action-setfield time_end={{!!time_start}}/>
 <<doc-svg "$:/plugins/mabuqian/time-prints/image/event" "#2d2e36">> 结束-开始
 </$button>
@@ -32,7 +32,7 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/butt
 	start-ss={{{ [<start-hh-ss>search-replace<start-hh>,[]]  }}}
 	time-start={{{ [<start-hh>multiply[60]add<start-ss>] }}}
     time_spent={{{ [<time-end>subtract<time-start>] }}}>
-<$button class="tc-btn-invisible tft-btn-common" tooltip="点击确定花费时间">
+<$button class="tc-btn-invisible tft-rpqn-common" tooltip="点击确定花费时间">
 <$action-setfield time_spent=<<time_spent>> />
 花费时间 <<time_spent>>
 </$button>
@@ -40,7 +40,7 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/butt
 \end
 
 \define create-events-under-event()
-<$button class="tc-btn-invisible tft-btn-common" tooltip="点击创建事件，在最后一次时间基础上">
+<$button class="tc-btn-invisible tft-rpqn-common" tooltip="点击创建事件，在最后一次时间基础上">
     <$action-createtiddler
       $basetitle={{$:/state/TP/PageLayout/create-tiddler-title}}
       super-tag="time"
@@ -60,7 +60,7 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/butt
 \end
 
 \define create-events-specific-under-event()
-<$button class="tc-btn-invisible tft-btn-common" tooltip="快速创建事件">
+<$button class="tc-btn-invisible tft-rpqn-common" tooltip="快速创建事件">
     <$action-createtiddler
       $basetitle={{{ [[$:/state/select-filter-search/tp-time_specific]get[text]] }}}
       super-tag="time"
@@ -80,7 +80,7 @@ title: $:/plugins/mabuqian/time-prints/view-template/under-event/components/butt
 \end
 
 \define create-events-detail-under-event()
-<$button class="tc-btn-invisible tft-btn-common" tooltip="快速创建事件">
+<$button class="tc-btn-invisible tft-rpqn-common" tooltip="快速创建事件">
     <$action-createtiddler
       $basetitle={{{ [[$:/state/select-filter-search/tp-time_detail]get[text]] }}}
       super-tag="time"

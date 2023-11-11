@@ -17,7 +17,7 @@ tags: $:/tags/TP/under-day
     day_all_count={{{ [tag<currentTiddler>has[time_major]count[]]  }}}
 >
 
-<$button class="tc-btn-invisible tft-btn-common" tooltip="一天结束后，进行赋值">
+<$button class="tc-btn-invisible tft-rpqn-common" tooltip="一天结束后，进行赋值">
 <$action-setfield
 time_day_all=<<time_day_all>>
 time_day_life=<<time_day_life>>

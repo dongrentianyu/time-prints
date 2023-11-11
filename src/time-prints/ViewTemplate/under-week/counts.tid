@@ -17,7 +17,7 @@ tags: $:/tags/TP/under-week
     count_week_activites={{{ [time_form[days]tag<currentTiddler>tagging[]] +[time_major[活动]count[]]  }}}
 >
 
-<$button class="tc-btn-invisible tft-btn-common" tooltip="一周结束后，进行赋值">
+<$button class="tc-btn-invisible tft-rpqn-common" tooltip="一周结束后，进行赋值">
 <$action-setfield
 time_week_all=<<time_week_all>>
 time_week_life=<<time_week_life>>

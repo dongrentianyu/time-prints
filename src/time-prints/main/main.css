@@ -48,16 +48,15 @@
   word-wrap: break-word;
   word-break: break-all;
 }
-.tft-btn-common {
+.tft-rpqn-common {
   text-decoration: none;
   font-weight: 500;
-  color: #22202e;
-  background-color: #f2f4f7;
-  color: #5a6872;
+  background-color: #f2f4f7 !important;
+  color: #5a6872 !important;
   box-shadow: none;
   border-radius: 5px;
   padding: 3px 5px;
 }
-.tft-btn-common:hover {
+.tft-rpqn-common:hover {
   background-color: #d4d9e2;
 }
