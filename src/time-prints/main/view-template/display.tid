@@ -1,3 +1,22 @@
 title: $:/plugins/mabuqian/time-prints/main/display
 
-<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/main/display]]" "$:/plugins/mabuqian/time-prints/main/display-day/components" "$:/state/tp/main/display">>
+<div class="tp-sidebar-project-list-item" >
+<$button class="tc-btn-invisible tft-rpqn-common" set="$:/state/tp/main/display" setTo="最近七天" tooltip="点击展示最近七天">最近七天</$button>&nbsp;
+<$button class="tc-btn-invisible tft-rpqn-common" set="$:/state/tp/main/display" setTo="最近七周" tooltip="点击展示最近七周">最近七周</$button>&nbsp;
+<$button class="tc-btn-invisible tft-rpqn-common" set="$:/state/tp/main/display" setTo="specifict和detail" tooltip="点击展示specifict和detail">specifict和detail</$button>&nbsp;
+<$button class="tc-btn-invisible tft-rpqn-common" set="$:/state/tp/main/display" setTo="others" tooltip="点击展示其他内容">其他</$button>&nbsp;
+<$button class="tc-btn-invisible tft-rpqn-common" set="$:/state/tp/main/display" setTo="hide" tooltip="隐藏内容">隐藏</$button>&nbsp;
+</div>
+
+<$reveal type="match" state="$:/state/tp/main/display" text="最近七天">
+ <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/display-day/components" mode="block"/>
+</$reveal>
+<$reveal type="match" state="$:/state/tp/main/display" text="最近七周">
+ <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/display-week/components" mode="block"/>
+</$reveal>
+<$reveal type="match" state="$:/state/tp/main/display" text="specifict和detail">
+ <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/display-specific-detail/components" mode="block"/>
+</$reveal>
+<$reveal type="match" state="$:/state/tp/main/display" text="others">
+ <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/display-others/components" mode="block"/>
+</$reveal>

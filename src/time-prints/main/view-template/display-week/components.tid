@@ -2,4 +2,4 @@ title: $:/plugins/mabuqian/time-prints/main/display-week/components
 caption: 最近七周
 tags: $:/tags/TP/main/display
 
-<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/main/display-week]]" "$:/plugins/mabuqian/time-prints/main/display-week/counts" "$:/state/tp/display-week" "tc-vertical">>
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/main/display-week]]" "$:/plugins/mabuqian/time-prints/main/display-week/counts" "$:/state/tp/display-week">>

@@ -1,0 +1,51 @@
+title: $:/plugins/mabuqian/time-prints/main/display-others/filter-button
+tags: $:/tags/TP/main/display-others
+caption: 筛选查找
+
+\define filter-button-major(name)
+<$button tooltip="点击筛选$name$"><$action-setfield $tiddler="$:/state/tp/filter-button" major="$name$"/>$name$</$button>
+\end
+
+<$button set="$:/state/tp/filter-button/search" setTo="specific">查询specific</$button>
+<$button set="$:/state/tp/filter-button/search" setTo="detail">查询detail</$button>
+<$button set="$:/state/tp/filter-button/search" setTo="hide">隐藏</$button>
+
+<<filter-button-major "生活">>&nbsp;&nbsp;<<filter-button-major "娱乐">>&nbsp;&nbsp;<<filter-button-major "学习">>&nbsp;&nbsp;<<filter-button-major "工作">>&nbsp;&nbsp;<<filter-button-major "活动">>&nbsp;&nbsp;<<filter-button-major "隐藏">>
+
+<$let 
+filter-major={{$:/state/tp/filter-button!!major}}
+filter-specific={{$:/state/tp/filter-button!!specific}}
+filter-detail={{$:/state/tp/filter-button!!detail}}>
+<$list filter="[time_major<filter-major>get[time_specific]unique[]]" variable="Specific">
+<$button>
+<$action-setfield $tiddler="$:/state/tp/filter-button" specific=<<Specific>> />
+<<Specific>>
+</$button>
+</$list>
+<p></p>
+<$list filter="[time_major<filter-major>time_specific<filter-specific>get[time_detail]unique[]]" variable="Detail">
+<$button>
+<$action-setfield $tiddler="$:/state/tp/filter-button" detail=<<Detail>> />
+<<Detail>>
+</$button>
+</$list>
+
+<$reveal type="match" state="$:/state/tp/filter-button/search" text="specific">
+<div style="column-count:10;">
+<$list filter="[time_major<filter-major>time_specific<filter-specific>]">
+
+<$link><<currentTiddler>></$link>
+
+</$list>
+</div>
+</$reveal>
+<$reveal type="match" state="$:/state/tp/filter-button/search" text="detail">
+<div style="column-count:10;">
+<$list filter="[time_major<filter-major>time_specific<filter-specific>time_detail<filter-detail>]">
+
+<$link><<currentTiddler>></$link>
+
+</$list>
+</div>
+</$reveal>
+</$let>

@@ -1,0 +1,5 @@
+title: $:/plugins/mabuqian/time-prints/main/display-others/components
+caption: 其他
+tags: $:/tags/TP/main/display
+
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/TP/main/display-others]]" "$:/plugins/mabuqian/time-prints/main/display-others/filter-button" "$:/state/tp/display-others">>
