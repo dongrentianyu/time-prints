@@ -17,3 +17,5 @@ tags: $:/tags/ControlPanel/SettingsTab $:/tags/TP/main/display-others
 [[常用配置|$:/plugins/mabuqian/time-prints/Config/time-detail]]：<$edit-text tiddler="$:/plugins/mabuqian/time-prints/Config/time-detail" field="text" tag=input class="w-100" />
 
 [[最多列出项|$:/plugins/mabuqian/time-prints/Config/last-number]]：<$edit-text tiddler="$:/plugins/mabuqian/time-prints/Config/last-number" field="text" tag=input class="w-100" />
+
+[[Details最多保留时间，需要为负数|$:/plugins/mabuqian/time-prints/Config/last-detail-display-days]]：<$edit-text tiddler="$:/plugins/mabuqian/time-prints/Config/last-detail-display-days" field="text" tag=input class="w-100" />
