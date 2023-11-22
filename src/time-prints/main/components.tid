@@ -7,20 +7,20 @@ title: $:/plugins/mabuqian/time-prints/main/components
 </div>
 
 <div class="flex-row">
-<div class="flex-col">
-<div class="tp-sidebar-project-list-item" >
-<<empty-major>>&nbsp;&nbsp;
-<<empty-specific>>&nbsp;&nbsp;
-<<empty-detail>>&nbsp;&nbsp;
-</div>
-<div class="tp-sidebar-project-list-item" >
-<<create-events>>&nbsp;&nbsp;
-<<create-events-specific>>&nbsp;&nbsp;
-<<create-events-detail>>&nbsp;&nbsp;
-</div>
-<div class="flex-col">
-<$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-button" mode="block"/>
-</div>
+ <div class="flex-col">
+  <div class="tp-sidebar-project-list-item" >
+   <<empty-major>>&nbsp;&nbsp;
+   <<empty-specific>>&nbsp;&nbsp;
+   <<empty-detail>>&nbsp;&nbsp;
+  </div>
+  <div class="tp-sidebar-project-list-item" >
+  <<create-events>>&nbsp;&nbsp;
+  <<create-events-specific>>&nbsp;&nbsp;
+  <<create-events-detail>>&nbsp;&nbsp;
+  </div>
+ <div class="flex-col">
+  <$transclude tiddler="$:/plugins/mabuqian/time-prints/main/new-button" mode="block"/>
+ </div>
 </div>
 <div class="flex-col">
 <div class="tp-sidebar-project-list-item" >

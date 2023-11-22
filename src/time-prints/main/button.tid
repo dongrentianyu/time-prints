@@ -197,7 +197,7 @@ year_days={{{ [<select-time>format:date[0ddddd]]  }}}
      >
      <<after-create-tiddler-without-parent>>
      </$action-createtiddler>
-     <<doc-svg "$:/plugins/mabuqian/time-prints/image/day" "#2d2e36">> 一天
+     <<doc-svg "$:/plugins/mabuqian/time-prints/image/day" "#2d2e36">> 某天
 </$button>
 </$set>
 </$let>
